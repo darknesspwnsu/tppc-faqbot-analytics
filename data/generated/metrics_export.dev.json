@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "generated_at": "2026-01-04T15:39:47.416Z",
+    "bucket": "hour",
+    "window_days": 90,
+    "range": {
+      "start": "2025-10-06T15:39:47.416Z",
+      "end": "2026-01-04T15:39:47.416Z"
+    }
+  },
+  "overview": {
+    "last_24h": {
+      "command.invoked": 15,
+      "command.latency": 15,
+      "external.fetch": 24,
+      "leaderboard.refresh": 3,
+      "promo.refresh": 3,
+      "rarity.refresh": 6,
+      "rpg.fetch": 18
+    },
+    "last_7d": {
+      "command.invoked": 15,
+      "command.latency": 15,
+      "external.fetch": 24,
+      "leaderboard.refresh": 3,
+      "promo.refresh": 3,
+      "rarity.refresh": 6,
+      "rpg.fetch": 18
+    },
+    "top_commands_24h": [
+      {
+        "cmd": "!export",
+        "count": 4
+      },
+      {
+        "cmd": "!rarity",
+        "count": 4
+      },
+      {
+        "cmd": "!p",
+        "count": 2
+      },
+      {
+        "cmd": "!l4",
+        "count": 1
+      },
+      {
+        "cmd": "!setpromo",
+        "count": 1
+      }
+    ],
+    "top_errors_24h": []
+  },
+  "timeseries": {
+    "command.invoked": [
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!l4",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!setpromo",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "help",
+          "status": "ok",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!a",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "!p",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "cmd": "!export",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!rc",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "cmd": "!rarity",
+          "status": "ok",
+          "type": "bang"
+        }
+      }
+    ],
+    "command.latency": [
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "!l4",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!p",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!rc",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "help",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!a",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!setpromo",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!rarity",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!p",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "!export",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "!rarity",
+          "type": "bang"
+        }
+      }
+    ],
+    "external.fetch": [
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 18,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "source": "rarity4",
+          "status": "ok"
+        }
+      }
+    ],
+    "leaderboard.refresh": [
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      }
+    ],
+    "promo.refresh": [
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "reason": "startup",
+          "status": "ok"
+        }
+      }
+    ],
+    "rarity.refresh": [
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "kind": "l4",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      }
+    ],
+    "rpg.fetch": [
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 9,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 9,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
+      }
+    ]
+  }
+}
