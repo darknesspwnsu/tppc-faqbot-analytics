@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spectreon Metrics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+  </head>
+  <body>
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">Spectreon</div>
+        <h1>Metrics Control Room</h1>
+        <p class="subtitle">Operational intelligence from live bot telemetry.</p>
+      </div>
+      <div class="topbar__right">
+        <div class="status">
+          <span class="status__dot"></span>
+          <span id="last-updated">Loading…</span>
+        </div>
+        <div class="range-toggle" role="group" aria-label="Time range">
+          <button data-range="24h" class="active">24h</button>
+          <button data-range="7d">7d</button>
+          <button data-range="30d">30d</button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="overview" role="tab" aria-selected="true">Overview</button>
+      <button class="tab" data-tab="details" role="tab" aria-selected="false">Detailed View</button>
+    </nav>
+
+    <main>
+      <section id="overview" class="tab-panel active" role="tabpanel">
+        <div class="kpi-grid">
+          <div class="card kpi">
+            <div class="kpi__label">Commands (OK)</div>
+            <div class="kpi__value" id="kpi-commands">—</div>
+            <div class="kpi__meta" id="kpi-commands-meta">0 events</div>
+          </div>
+          <div class="card kpi">
+            <div class="kpi__label">External Fetch</div>
+            <div class="kpi__value" id="kpi-fetch">—</div>
+            <div class="kpi__meta" id="kpi-fetch-meta">0 ok • 0 error</div>
+          </div>
+          <div class="card kpi">
+            <div class="kpi__label">DM Failures</div>
+            <div class="kpi__value" id="kpi-dm">—</div>
+            <div class="kpi__meta" id="kpi-dm-meta">0 features impacted</div>
+          </div>
+          <div class="card kpi">
+            <div class="kpi__label">Scheduler Health</div>
+            <div class="kpi__value" id="kpi-scheduler">—</div>
+            <div class="kpi__meta" id="kpi-scheduler-meta">0 ok • 0 error</div>
+          </div>
+        </div>
+
+        <div class="chart-grid">
+          <div class="card chart">
+            <div class="card__header">
+              <h3>Command Throughput</h3>
+              <p>Aggregate successful commands per hour.</p>
+            </div>
+            <div id="chart-commands" class="chart__body"></div>
+          </div>
+          <div class="card chart">
+            <div class="card__header">
+              <h3>External Fetch Reliability</h3>
+              <p>Success vs failure for external sources.</p>
+            </div>
+            <div id="chart-fetch" class="chart__body"></div>
+          </div>
+        </div>
+
+        <div class="split-grid">
+          <div class="card table">
+            <div class="card__header">
+              <h3>Top Commands</h3>
+              <p>Most-used commands in the selected window.</p>
+            </div>
+            <div class="table__body" id="top-commands"></div>
+          </div>
+          <div class="card table">
+            <div class="card__header">
+              <h3>Error Hotspots</h3>
+              <p>Most frequent error signatures.</p>
+            </div>
+            <div class="table__body" id="top-errors"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="details" class="tab-panel" role="tabpanel">
+        <div class="chart-grid">
+          <div class="card chart">
+            <div class="card__header">
+              <h3>Command Mix</h3>
+              <p>Top 6 commands, stacked over time.</p>
+            </div>
+            <div id="chart-command-mix" class="chart__body"></div>
+          </div>
+          <div class="card chart">
+            <div class="card__header">
+              <h3>External Fetch by Source</h3>
+              <p>Success vs error per source.</p>
+            </div>
+            <div id="chart-fetch-source" class="chart__body"></div>
+          </div>
+          <div class="card chart">
+            <div class="card__header">
+              <h3>Scheduler Runs</h3>
+              <p>OK vs error status per job.</p>
+            </div>
+            <div id="chart-scheduler" class="chart__body"></div>
+          </div>
+          <div class="card chart">
+            <div class="card__header">
+              <h3>DM Failures by Feature</h3>
+              <p>Which workflows are blocked by closed DMs.</p>
+            </div>
+            <div id="chart-dm" class="chart__body"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Auto-refreshing every 15 minutes.</span>
+      <span>Data source: metrics_export.json</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,301 @@
+{
+  "meta": {
+    "generated_at": "2026-01-04T14:28:58.361Z",
+    "bucket": "hour",
+    "window_days": 90,
+    "range": {
+      "start": "2025-10-06T14:28:58.361Z",
+      "end": "2026-01-04T14:28:58.361Z"
+    }
+  },
+  "overview": {
+    "last_24h": {
+      "external.fetch": 60,
+      "promo.refresh": 8,
+      "rarity.refresh": 16,
+      "rpg.fetch": 44,
+      "command.invoked": 17,
+      "command.latency": 17,
+      "leaderboard.refresh": 7
+    },
+    "last_7d": {
+      "external.fetch": 60,
+      "promo.refresh": 8,
+      "rarity.refresh": 16,
+      "rpg.fetch": 44,
+      "command.invoked": 17,
+      "command.latency": 17,
+      "leaderboard.refresh": 7
+    },
+    "top_commands_24h": [
+      {
+        "cmd": "!export",
+        "count": 6
+      },
+      {
+        "cmd": "helpcat:",
+        "count": 6
+      },
+      {
+        "cmd": "help",
+        "count": 3
+      },
+      {
+        "cmd": "!a",
+        "count": 2
+      }
+    ],
+    "top_errors_24h": []
+  },
+  "timeseries": {
+    "external.fetch": [
+      {
+        "ts": "2026-01-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T13:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rarity4",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 42,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "source": "rarity4",
+          "status": "ok"
+        }
+      }
+    ],
+    "promo.refresh": [
+      {
+        "ts": "2026-01-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "startup",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "reason": "startup",
+          "status": "ok"
+        }
+      }
+    ],
+    "rarity.refresh": [
+      {
+        "ts": "2026-01-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "l4",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "kind": "l4",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      }
+    ],
+    "rpg.fetch": [
+      {
+        "ts": "2026-01-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 21,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 21,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
+      }
+    ],
+    "command.invoked": [
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "cmd": "help",
+          "status": "ok",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "!a",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "cmd": "!export",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "cmd": "helpcat:",
+          "status": "ok",
+          "type": "component"
+        }
+      }
+    ],
+    "command.latency": [
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "bucket": "lt250",
+          "cmd": "helpcat:",
+          "type": "component"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "help",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!a",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "bucket": "gte3000",
+          "cmd": "!export",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "!export",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!export",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "helpcat:",
+          "type": "component"
+        }
+      }
+    ],
+    "leaderboard.refresh": [
+      {
+        "ts": "2026-01-04T14:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      }
+    ]
+  }
+}
