@@ -115,6 +115,46 @@ h1 {
   box-shadow: 0 0 8px rgba(52, 211, 153, 0.8);
 }
 
+.status__env {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--accent);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.env-select {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--outline);
+  background: rgba(15, 23, 42, 0.6);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.env-select label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 10px;
+}
+
+.env-select select {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.env-select select:focus {
+  outline: none;
+}
+
 .range-toggle {
   display: flex;
   background: rgba(15, 23, 42, 0.6);

@@ -1,14 +1,30 @@
-const DATA_URL = "data/generated/metrics_export.json";
+const ENV_SOURCES = {
+  prod: { label: "Prod", path: "data/generated/metrics_export.json" },
+  dev: { label: "Dev", path: "data/generated/metrics_export.dev.json" },
+};
+
 const REFRESH_MS = 15 * 60 * 1000;
 
 const state = {
   data: null,
   range: "24h",
   charts: {},
+  env: "prod",
 };
 
 const rangeButtons = document.querySelectorAll(".range-toggle button");
 const tabs = document.querySelectorAll(".tab");
+const envSelect = document.getElementById("env-select");
+
+function resolveEnv() {
+  const params = new URLSearchParams(window.location.search);
+  const env = params.get("env");
+  return ENV_SOURCES[env] ? env : "prod";
+}
+
+function dataUrl() {
+  return ENV_SOURCES[state.env]?.path || ENV_SOURCES.prod.path;
+}
 
 function parseTs(ts) {
   return new Date(ts).getTime();
@@ -384,6 +400,8 @@ function updateCharts() {
 
 function updateLastUpdated() {
   const label = document.getElementById("last-updated");
+  const envLabel = document.getElementById("env-label");
+  if (envLabel) envLabel.textContent = ENV_SOURCES[state.env]?.label || "Prod";
   if (!state.data?.meta?.generated_at) {
     label.textContent = "No data";
     return;
@@ -393,7 +411,7 @@ function updateLastUpdated() {
 }
 
 async function loadData() {
-  const res = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: "no-store" });
+  const res = await fetch(`${dataUrl()}?t=${Date.now()}`, { cache: "no-store" });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const data = await res.json();
   state.data = data;
@@ -404,6 +422,23 @@ async function loadData() {
 }
 
 function attachHandlers() {
+  if (envSelect) {
+    envSelect.value = state.env;
+    envSelect.addEventListener("change", () => {
+      state.env = envSelect.value;
+      const params = new URLSearchParams(window.location.search);
+      if (state.env === "prod") {
+        params.delete("env");
+      } else {
+        params.set("env", state.env);
+      }
+      const query = params.toString();
+      const nextUrl = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+      window.history.replaceState(null, "", nextUrl);
+      void loadData();
+    });
+  }
+
   rangeButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       rangeButtons.forEach((b) => b.classList.remove("active"));
@@ -432,6 +467,7 @@ function attachHandlers() {
 }
 
 async function boot() {
+  state.env = resolveEnv();
   attachHandlers();
   try {
     await loadData();

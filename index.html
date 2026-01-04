@@ -27,6 +27,14 @@
         <div class="status">
           <span class="status__dot"></span>
           <span id="last-updated">Loading…</span>
+          <span id="env-label" class="status__env">Prod</span>
+        </div>
+        <div class="env-select">
+          <label for="env-select">Data</label>
+          <select id="env-select" aria-label="Metrics environment">
+            <option value="prod">Prod</option>
+            <option value="dev">Dev</option>
+          </select>
         </div>
         <div class="range-toggle" role="group" aria-label="Time range">
           <button data-range="24h" class="active">24h</button>
