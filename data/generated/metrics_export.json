@@ -1,193 +1,56 @@
 {
   "meta": {
-    "generated_at": "2026-01-04T15:00:01.346Z",
+    "generated_at": "2026-01-04T15:08:58.127Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-06T15:00:01.346Z",
-      "end": "2026-01-04T15:00:01.346Z"
+      "start": "2025-10-06T15:08:58.127Z",
+      "end": "2026-01-04T15:08:58.127Z"
     }
   },
   "overview": {
     "last_24h": {
-      "external.fetch": 82,
-      "promo.refresh": 11,
-      "rarity.refresh": 22,
-      "rpg.fetch": 60,
-      "command.invoked": 22,
-      "command.latency": 22,
-      "leaderboard.refresh": 10
+      "command.invoked": 4,
+      "command.latency": 4
     },
     "last_7d": {
-      "external.fetch": 82,
-      "promo.refresh": 11,
-      "rarity.refresh": 22,
-      "rpg.fetch": 60,
-      "command.invoked": 22,
-      "command.latency": 22,
-      "leaderboard.refresh": 10
+      "command.invoked": 4,
+      "command.latency": 4
     },
     "top_commands_24h": [
       {
-        "cmd": "!export",
-        "count": 11
-      },
-      {
-        "cmd": "helpcat:",
-        "count": 6
+        "cmd": "!setpromo",
+        "count": 1
       },
       {
         "cmd": "help",
-        "count": 3
+        "count": 1
       },
       {
         "cmd": "!a",
-        "count": 2
+        "count": 1
+      },
+      {
+        "cmd": "!p",
+        "count": 1
       }
     ],
     "top_errors_24h": []
   },
   "timeseries": {
-    "external.fetch": [
-      {
-        "ts": "2026-01-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "source": "rarity",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-01-04T13:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-01-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "source": "rarity4",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 10,
-        "tags": {
-          "source": "rarity",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 58,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 10,
-        "tags": {
-          "source": "rarity4",
-          "status": "ok"
-        }
-      }
-    ],
-    "promo.refresh": [
-      {
-        "ts": "2026-01-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "startup",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 10,
-        "tags": {
-          "reason": "startup",
-          "status": "ok"
-        }
-      }
-    ],
-    "rarity.refresh": [
-      {
-        "ts": "2026-01-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "l4",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-01-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 10,
-        "tags": {
-          "kind": "l4",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 10,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      }
-    ],
-    "rpg.fetch": [
-      {
-        "ts": "2026-01-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-01-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 29,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 29,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      }
-    ],
     "command.invoked": [
       {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 3,
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!setpromo",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
         "tags": {
           "cmd": "help",
           "status": "ok",
@@ -195,8 +58,8 @@
         }
       },
       {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 2,
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
         "tags": {
           "cmd": "!a",
           "status": "ok",
@@ -204,37 +67,28 @@
         }
       },
       {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 11,
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
         "tags": {
-          "cmd": "!export",
+          "cmd": "!p",
           "status": "ok",
           "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "cmd": "helpcat:",
-          "status": "ok",
-          "type": "component"
         }
       }
     ],
     "command.latency": [
       {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 4,
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
         "tags": {
-          "bucket": "lt250",
-          "cmd": "helpcat:",
-          "type": "component"
+          "bucket": "lt500",
+          "cmd": "!p",
+          "type": "bang"
         }
       },
       {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 3,
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
         "tags": {
           "bucket": "lt500",
           "cmd": "help",
@@ -242,8 +96,8 @@
         }
       },
       {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 2,
+        "ts": "2026-01-04T15:00:00.000Z",
+        "count": 1,
         "tags": {
           "bucket": "lt500",
           "cmd": "!a",
@@ -251,49 +105,12 @@
         }
       },
       {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "bucket": "gte3000",
-          "cmd": "!export",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "bucket": "lt3000",
-          "cmd": "!export",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
+        "ts": "2026-01-04T15:00:00.000Z",
         "count": 1,
         "tags": {
           "bucket": "lt500",
-          "cmd": "!export",
+          "cmd": "!setpromo",
           "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "helpcat:",
-          "type": "component"
-        }
-      }
-    ],
-    "leaderboard.refresh": [
-      {
-        "ts": "2026-01-04T14:00:00.000Z",
-        "count": 10,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
         }
       }
     ]
