@@ -1,17 +1,17 @@
 {
   "meta": {
-    "generated_at": "2026-01-04T20:00:00.752Z",
+    "generated_at": "2026-01-04T20:11:18.121Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-06T20:00:00.752Z",
-      "end": "2026-01-04T20:00:00.752Z"
+      "start": "2025-10-06T20:11:18.121Z",
+      "end": "2026-01-04T20:11:18.121Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 18,
-      "command.latency": 18,
+      "command.invoked": 19,
+      "command.latency": 19,
       "external.fetch": 24,
       "leaderboard.refresh": 3,
       "promo.refresh": 3,
@@ -19,8 +19,8 @@
       "rpg.fetch": 18
     },
     "last_7d": {
-      "command.invoked": 18,
-      "command.latency": 18,
+      "command.invoked": 19,
+      "command.latency": 19,
       "external.fetch": 24,
       "leaderboard.refresh": 3,
       "promo.refresh": 3,
@@ -41,11 +41,11 @@
         "count": 2
       },
       {
-        "cmd": "!l4",
-        "count": 1
+        "cmd": "!rc",
+        "count": 2
       },
       {
-        "cmd": "!setpromo",
+        "cmd": "!l4",
         "count": 1
       }
     ],
@@ -121,6 +121,15 @@
         "count": 6,
         "tags": {
           "cmd": "!rarity",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T20:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!rc",
           "status": "ok",
           "type": "bang"
         }
@@ -232,6 +241,15 @@
         "tags": {
           "bucket": "lt100",
           "cmd": "!rarity",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T20:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!rc",
           "type": "bang"
         }
       }
