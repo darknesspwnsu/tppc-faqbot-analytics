@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-01-04T22:48:49.755Z",
+    "generated_at": "2026-01-04T23:00:00.297Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-06T22:48:49.755Z",
-      "end": "2026-01-04T22:48:49.755Z"
+      "start": "2025-10-06T23:00:00.297Z",
+      "end": "2026-01-04T23:00:00.297Z"
     }
   },
   "overview": {
@@ -15,8 +15,8 @@
       "promo.refresh": 1,
       "rarity.refresh": 2,
       "rpg.fetch": 6,
-      "command.invoked": 30,
-      "command.latency": 30
+      "command.invoked": 32,
+      "command.latency": 32
     },
     "last_7d": {
       "external.fetch": 8,
@@ -24,8 +24,8 @@
       "promo.refresh": 1,
       "rarity.refresh": 2,
       "rpg.fetch": 6,
-      "command.invoked": 30,
-      "command.latency": 30
+      "command.invoked": 32,
+      "command.latency": 32
     },
     "top_commands_24h": [
       {
@@ -38,7 +38,7 @@
       },
       {
         "cmd": "!ft",
-        "count": 5
+        "count": 6
       },
       {
         "cmd": "helpcat:",
@@ -137,7 +137,7 @@
     "command.invoked": [
       {
         "ts": "2026-01-04T22:00:00.000Z",
-        "count": 5,
+        "count": 6,
         "tags": {
           "cmd": "!ft",
           "status": "ok",
@@ -185,6 +185,15 @@
         "count": 1,
         "tags": {
           "cmd": "!rig",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T22:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!export",
           "status": "ok",
           "type": "bang"
         }
@@ -301,7 +310,7 @@
       },
       {
         "ts": "2026-01-04T22:00:00.000Z",
-        "count": 2,
+        "count": 3,
         "tags": {
           "bucket": "lt1000",
           "cmd": "!ft",
@@ -314,6 +323,15 @@
         "tags": {
           "bucket": "lt1000",
           "cmd": "!roll",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T22:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "!export",
           "type": "bang"
         }
       },
