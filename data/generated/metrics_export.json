@@ -1,116 +1,111 @@
 {
   "meta": {
-    "generated_at": "2026-01-04T15:08:58.127Z",
+    "generated_at": "2026-01-04T22:00:00.491Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-06T15:08:58.127Z",
-      "end": "2026-01-04T15:08:58.127Z"
+      "start": "2025-10-06T22:00:00.491Z",
+      "end": "2026-01-04T22:00:00.491Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 4,
-      "command.latency": 4
+      "external.fetch": 8,
+      "leaderboard.refresh": 1,
+      "promo.refresh": 1,
+      "rarity.refresh": 2,
+      "rpg.fetch": 6
     },
     "last_7d": {
-      "command.invoked": 4,
-      "command.latency": 4
+      "external.fetch": 8,
+      "leaderboard.refresh": 1,
+      "promo.refresh": 1,
+      "rarity.refresh": 2,
+      "rpg.fetch": 6
     },
-    "top_commands_24h": [
-      {
-        "cmd": "!setpromo",
-        "count": 1
-      },
-      {
-        "cmd": "help",
-        "count": 1
-      },
-      {
-        "cmd": "!a",
-        "count": 1
-      },
-      {
-        "cmd": "!p",
-        "count": 1
-      }
-    ],
+    "top_commands_24h": [],
     "top_errors_24h": []
   },
   "timeseries": {
-    "command.invoked": [
+    "external.fetch": [
       {
-        "ts": "2026-01-04T15:00:00.000Z",
+        "ts": "2026-01-04T21:00:00.000Z",
         "count": 1,
         "tags": {
-          "cmd": "!setpromo",
-          "status": "ok",
-          "type": "bang"
+          "source": "rarity",
+          "status": "ok"
         }
       },
       {
-        "ts": "2026-01-04T15:00:00.000Z",
-        "count": 1,
+        "ts": "2026-01-04T21:00:00.000Z",
+        "count": 6,
         "tags": {
-          "cmd": "help",
-          "status": "ok",
-          "type": "slash"
+          "source": "rpg",
+          "status": "ok"
         }
       },
       {
-        "ts": "2026-01-04T15:00:00.000Z",
+        "ts": "2026-01-04T21:00:00.000Z",
         "count": 1,
         "tags": {
-          "cmd": "!a",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-01-04T15:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "cmd": "!p",
-          "status": "ok",
-          "type": "bang"
+          "source": "rarity4",
+          "status": "ok"
         }
       }
     ],
-    "command.latency": [
+    "leaderboard.refresh": [
       {
-        "ts": "2026-01-04T15:00:00.000Z",
+        "ts": "2026-01-04T21:00:00.000Z",
         "count": 1,
         "tags": {
-          "bucket": "lt500",
-          "cmd": "!p",
-          "type": "bang"
+          "kind": "training",
+          "status": "ok"
+        }
+      }
+    ],
+    "promo.refresh": [
+      {
+        "ts": "2026-01-04T21:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "startup",
+          "status": "ok"
+        }
+      }
+    ],
+    "rarity.refresh": [
+      {
+        "ts": "2026-01-04T21:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "l4",
+          "status": "ok"
         }
       },
       {
-        "ts": "2026-01-04T15:00:00.000Z",
+        "ts": "2026-01-04T21:00:00.000Z",
         "count": 1,
         "tags": {
-          "bucket": "lt500",
-          "cmd": "help",
-          "type": "slash"
+          "kind": "main",
+          "status": "ok"
+        }
+      }
+    ],
+    "rpg.fetch": [
+      {
+        "ts": "2026-01-04T21:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
         }
       },
       {
-        "ts": "2026-01-04T15:00:00.000Z",
-        "count": 1,
+        "ts": "2026-01-04T21:00:00.000Z",
+        "count": 3,
         "tags": {
-          "bucket": "lt500",
-          "cmd": "!a",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-01-04T15:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "!setpromo",
-          "type": "bang"
+          "method": "GET",
+          "status": "ok"
         }
       }
     ]
