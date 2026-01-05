@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-01-05T17:00:00.474Z",
+    "generated_at": "2026-01-05T18:00:00.505Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-07T17:00:00.474Z",
-      "end": "2026-01-05T17:00:00.474Z"
+      "start": "2025-10-07T18:00:00.505Z",
+      "end": "2026-01-05T18:00:00.505Z"
     }
   },
   "overview": {
@@ -15,8 +15,8 @@
       "promo.refresh": 2,
       "rarity.refresh": 3,
       "rpg.fetch": 41,
-      "command.invoked": 396,
-      "command.latency": 396,
+      "command.invoked": 401,
+      "command.latency": 401,
       "notifyme.trigger": 34,
       "notifyme.set": 1,
       "remindme.list": 1,
@@ -28,8 +28,8 @@
       "promo.refresh": 2,
       "rarity.refresh": 3,
       "rpg.fetch": 41,
-      "command.invoked": 396,
-      "command.latency": 396,
+      "command.invoked": 401,
+      "command.latency": 401,
       "notifyme.trigger": 34,
       "notifyme.set": 1,
       "remindme.list": 1,
@@ -38,7 +38,7 @@
     "top_commands_24h": [
       {
         "cmd": "!ft",
-        "count": 115
+        "count": 117
       },
       {
         "cmd": "!id",
@@ -46,7 +46,7 @@
       },
       {
         "cmd": "!rarity",
-        "count": 37
+        "count": 39
       },
       {
         "cmd": "helpcat:",
@@ -1502,6 +1502,33 @@
         "count": 2,
         "tags": {
           "cmd": "?ft",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T17:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "!ft",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T17:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!wiki",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T17:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "!rarity",
           "status": "ok",
           "type": "bang"
         }
@@ -3080,6 +3107,42 @@
         "tags": {
           "bucket": "lt500",
           "cmd": "!calc",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T17:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!wiki",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T17:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T17:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!rarity",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T17:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!rarity",
           "type": "bang"
         }
       }
