@@ -214,6 +214,8 @@ function updateTopTables() {
 function initChart(id) {
   const el = document.getElementById(id);
   if (!el) return null;
+  const rect = el.getBoundingClientRect();
+  if (!rect.width || !rect.height) return null;
   if (state.charts[id]) return state.charts[id];
   const chart = echarts.init(el);
   state.charts[id] = chart;
@@ -458,6 +460,16 @@ function attachHandlers() {
       const panel = document.getElementById(tab.dataset.tab);
       panel.classList.add("active");
       updateCharts();
+      setTimeout(() => {
+        Object.entries(state.charts).forEach(([id, chart]) => {
+          const el = document.getElementById(id);
+          if (!el) return;
+          const parent = el.closest(".tab-panel");
+          if (parent && parent.classList.contains("active")) {
+            chart.resize();
+          }
+        });
+      }, 30);
     });
   });
 
