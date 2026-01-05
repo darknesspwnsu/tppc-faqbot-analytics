@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-01-05T00:17:02.296Z",
+    "generated_at": "2026-01-05T01:00:00.346Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-07T00:17:02.296Z",
-      "end": "2026-01-05T00:17:02.296Z"
+      "start": "2025-10-07T01:00:00.346Z",
+      "end": "2026-01-05T01:00:00.346Z"
     }
   },
   "overview": {
@@ -15,9 +15,9 @@
       "promo.refresh": 1,
       "rarity.refresh": 2,
       "rpg.fetch": 8,
-      "command.invoked": 83,
-      "command.latency": 83,
-      "notifyme.trigger": 8
+      "command.invoked": 135,
+      "command.latency": 135,
+      "notifyme.trigger": 13
     },
     "last_7d": {
       "external.fetch": 10,
@@ -25,18 +25,18 @@
       "promo.refresh": 1,
       "rarity.refresh": 2,
       "rpg.fetch": 8,
-      "command.invoked": 83,
-      "command.latency": 83,
-      "notifyme.trigger": 8
+      "command.invoked": 135,
+      "command.latency": 135,
+      "notifyme.trigger": 13
     },
     "top_commands_24h": [
       {
-        "cmd": "!ft",
-        "count": 22
+        "cmd": "!id",
+        "count": 40
       },
       {
-        "cmd": "!id",
-        "count": 19
+        "cmd": "!ft",
+        "count": 25
       },
       {
         "cmd": "!conteststart",
@@ -48,7 +48,7 @@
       },
       {
         "cmd": "!lf",
-        "count": 5
+        "count": 6
       }
     ],
     "top_errors_24h": []
@@ -316,7 +316,34 @@
       },
       {
         "ts": "2026-01-05T00:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "giveaway",
+          "status": "ok",
+          "type": "autocomplete"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "!choose",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
         "count": 3,
+        "tags": {
+          "cmd": "!slap",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 6,
         "tags": {
           "cmd": "!ft",
           "status": "ok",
@@ -325,7 +352,7 @@
       },
       {
         "ts": "2026-01-05T00:00:00.000Z",
-        "count": 4,
+        "count": 25,
         "tags": {
           "cmd": "!id",
           "status": "ok",
@@ -336,6 +363,24 @@
         "ts": "2026-01-05T00:00:00.000Z",
         "count": 1,
         "tags": {
+          "cmd": "giveaway:",
+          "status": "ok",
+          "type": "modal"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "cmd": "giveaway:",
+          "status": "ok",
+          "type": "component"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 2,
+        "tags": {
           "cmd": "!lf",
           "status": "ok",
           "type": "bang"
@@ -343,7 +388,7 @@
       },
       {
         "ts": "2026-01-05T00:00:00.000Z",
-        "count": 1,
+        "count": 3,
         "tags": {
           "cmd": "viewbox",
           "status": "ok",
@@ -352,11 +397,47 @@
       },
       {
         "ts": "2026-01-05T00:00:00.000Z",
-        "count": 2,
+        "count": 1,
+        "tags": {
+          "cmd": "!export",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "cmd": "!help",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 3,
         "tags": {
           "cmd": "?id",
           "status": "ok",
           "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "cmd": "!rarity",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "giveaway",
+          "status": "ok",
+          "type": "slash"
         }
       }
     ],
@@ -581,6 +662,24 @@
         "ts": "2026-01-05T00:00:00.000Z",
         "count": 1,
         "tags": {
+          "bucket": "lt1000",
+          "cmd": "giveaway:",
+          "type": "modal"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt250",
+          "cmd": "giveaway:",
+          "type": "component"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 1,
+        "tags": {
           "bucket": "gte3000",
           "cmd": "viewbox",
           "type": "slash"
@@ -588,7 +687,7 @@
       },
       {
         "ts": "2026-01-05T00:00:00.000Z",
-        "count": 2,
+        "count": 3,
         "tags": {
           "bucket": "lt100",
           "cmd": "?id",
@@ -597,7 +696,7 @@
       },
       {
         "ts": "2026-01-05T00:00:00.000Z",
-        "count": 2,
+        "count": 4,
         "tags": {
           "bucket": "lt500",
           "cmd": "!ft",
@@ -606,11 +705,38 @@
       },
       {
         "ts": "2026-01-05T00:00:00.000Z",
-        "count": 3,
+        "count": 18,
         "tags": {
           "bucket": "lt500",
           "cmd": "!id",
           "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "viewbox",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "giveaway",
+          "type": "autocomplete"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "giveaway",
+          "type": "slash"
         }
       },
       {
@@ -626,8 +752,62 @@
         "ts": "2026-01-05T00:00:00.000Z",
         "count": 1,
         "tags": {
+          "bucket": "lt250",
+          "cmd": "giveaway",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!lf",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!help",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 2,
+        "tags": {
           "bucket": "lt1000",
           "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!choose",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "giveaway:",
+          "type": "component"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!rarity",
           "type": "bang"
         }
       },
@@ -637,6 +817,51 @@
         "tags": {
           "bucket": "lt1000",
           "cmd": "!lf",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "!export",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "!rarity",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!slap",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!id",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T00:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!slap",
           "type": "bang"
         }
       }
@@ -651,7 +876,7 @@
       },
       {
         "ts": "2026-01-05T00:00:00.000Z",
-        "count": 5,
+        "count": 10,
         "tags": {
           "status": "ok"
         }
