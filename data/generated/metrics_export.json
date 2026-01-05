@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-01-04T23:00:00.297Z",
+    "generated_at": "2026-01-05T00:00:00.359Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-06T23:00:00.297Z",
-      "end": "2026-01-04T23:00:00.297Z"
+      "start": "2025-10-07T00:00:00.359Z",
+      "end": "2026-01-05T00:00:00.359Z"
     }
   },
   "overview": {
@@ -15,8 +15,9 @@
       "promo.refresh": 1,
       "rarity.refresh": 2,
       "rpg.fetch": 6,
-      "command.invoked": 32,
-      "command.latency": 32
+      "command.invoked": 72,
+      "command.latency": 72,
+      "notifyme.trigger": 3
     },
     "last_7d": {
       "external.fetch": 8,
@@ -24,29 +25,30 @@
       "promo.refresh": 1,
       "rarity.refresh": 2,
       "rpg.fetch": 6,
-      "command.invoked": 32,
-      "command.latency": 32
+      "command.invoked": 72,
+      "command.latency": 72,
+      "notifyme.trigger": 3
     },
     "top_commands_24h": [
       {
+        "cmd": "!ft",
+        "count": 19
+      },
+      {
         "cmd": "!id",
-        "count": 8
+        "count": 15
+      },
+      {
+        "cmd": "!conteststart",
+        "count": 11
       },
       {
         "cmd": "!roll",
-        "count": 7
-      },
-      {
-        "cmd": "!ft",
-        "count": 6
+        "count": 10
       },
       {
         "cmd": "helpcat:",
         "count": 4
-      },
-      {
-        "cmd": "help",
-        "count": 2
       }
     ],
     "top_errors_24h": []
@@ -224,6 +226,69 @@
           "status": "ok",
           "type": "component"
         }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 13,
+        "tags": {
+          "cmd": "!ft",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "cmd": "!id",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 11,
+        "tags": {
+          "cmd": "!conteststart",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "cmd": "!lf",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "cmd": "!roll",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!ng",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "?id",
+          "status": "ok",
+          "type": "bang"
+        }
       }
     ],
     "command.latency": [
@@ -342,6 +407,114 @@
           "bucket": "lt250",
           "cmd": "help",
           "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 11,
+        "tags": {
+          "bucket": "gte3000",
+          "cmd": "!conteststart",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "?id",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 9,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!id",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!roll",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "!roll",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!lf",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!ng",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!id",
+          "type": "bang"
+        }
+      }
+    ],
+    "notifyme.trigger": [
+      {
+        "ts": "2026-01-04T23:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "status": "ok"
         }
       }
     ]
