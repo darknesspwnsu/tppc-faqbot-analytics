@@ -1,35 +1,35 @@
 {
   "meta": {
-    "generated_at": "2026-01-05T15:00:00.663Z",
+    "generated_at": "2026-01-05T16:00:00.521Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-07T15:00:00.663Z",
-      "end": "2026-01-05T15:00:00.663Z"
+      "start": "2025-10-07T16:00:00.521Z",
+      "end": "2026-01-05T16:00:00.521Z"
     }
   },
   "overview": {
     "last_24h": {
-      "external.fetch": 44,
+      "external.fetch": 45,
       "leaderboard.refresh": 2,
       "promo.refresh": 2,
       "rarity.refresh": 3,
       "rpg.fetch": 41,
-      "command.invoked": 385,
-      "command.latency": 385,
+      "command.invoked": 389,
+      "command.latency": 389,
       "notifyme.trigger": 33,
       "notifyme.set": 1,
       "remindme.list": 1,
       "scheduler.run": 1
     },
     "last_7d": {
-      "external.fetch": 44,
+      "external.fetch": 45,
       "leaderboard.refresh": 2,
       "promo.refresh": 2,
       "rarity.refresh": 3,
       "rpg.fetch": 41,
-      "command.invoked": 385,
-      "command.latency": 385,
+      "command.invoked": 389,
+      "command.latency": 389,
       "notifyme.trigger": 33,
       "notifyme.set": 1,
       "remindme.list": 1,
@@ -38,7 +38,7 @@
     "top_commands_24h": [
       {
         "cmd": "!ft",
-        "count": 109
+        "count": 112
       },
       {
         "cmd": "!id",
@@ -162,6 +162,14 @@
         "count": 2,
         "tags": {
           "source": "rpg",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rarity_history",
           "status": "ok"
         }
       }
@@ -1440,6 +1448,24 @@
         "count": 2,
         "tags": {
           "cmd": "!ft",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T15:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "cmd": "!ft",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!rh",
           "status": "ok",
           "type": "bang"
         }
@@ -2945,6 +2971,33 @@
         "count": 2,
         "tags": {
           "bucket": "lt500",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T15:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!rh",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T15:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
           "cmd": "!ft",
           "type": "bang"
         }
