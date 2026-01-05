@@ -1,42 +1,44 @@
 {
   "meta": {
-    "generated_at": "2026-01-05T12:00:00.471Z",
+    "generated_at": "2026-01-05T13:00:00.496Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-07T12:00:00.471Z",
-      "end": "2026-01-05T12:00:00.471Z"
+      "start": "2025-10-07T13:00:00.496Z",
+      "end": "2026-01-05T13:00:00.496Z"
     }
   },
   "overview": {
     "last_24h": {
-      "external.fetch": 41,
+      "external.fetch": 42,
       "leaderboard.refresh": 1,
       "promo.refresh": 2,
-      "rarity.refresh": 2,
+      "rarity.refresh": 3,
       "rpg.fetch": 39,
-      "command.invoked": 374,
-      "command.latency": 374,
+      "command.invoked": 380,
+      "command.latency": 380,
       "notifyme.trigger": 30,
       "notifyme.set": 1,
-      "remindme.list": 1
+      "remindme.list": 1,
+      "scheduler.run": 1
     },
     "last_7d": {
-      "external.fetch": 41,
+      "external.fetch": 42,
       "leaderboard.refresh": 1,
       "promo.refresh": 2,
-      "rarity.refresh": 2,
+      "rarity.refresh": 3,
       "rpg.fetch": 39,
-      "command.invoked": 374,
-      "command.latency": 374,
+      "command.invoked": 380,
+      "command.latency": 380,
       "notifyme.trigger": 30,
       "notifyme.set": 1,
-      "remindme.list": 1
+      "remindme.list": 1,
+      "scheduler.run": 1
     },
     "top_commands_24h": [
       {
         "cmd": "!ft",
-        "count": 104
+        "count": 105
       },
       {
         "cmd": "!id",
@@ -44,7 +46,7 @@
       },
       {
         "cmd": "!rarity",
-        "count": 33
+        "count": 36
       },
       {
         "cmd": "helpcat:",
@@ -146,6 +148,14 @@
           "source": "rpg",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
       }
     ],
     "leaderboard.refresh": [
@@ -187,6 +197,14 @@
       },
       {
         "ts": "2026-01-04T21:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
         "count": 1,
         "tags": {
           "kind": "main",
@@ -1327,6 +1345,42 @@
         "count": 3,
         "tags": {
           "cmd": "!rarity",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!ft",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!lf",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "cmd": "!rarity",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "?ft",
           "status": "ok",
           "type": "bang"
         }
@@ -2763,6 +2817,42 @@
           "cmd": "hol:",
           "type": "component"
         }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "?ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!lf",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "!rarity",
+          "type": "bang"
+        }
       }
     ],
     "notifyme.trigger": [
@@ -2830,6 +2920,16 @@
         "ts": "2026-01-05T03:00:00.000Z",
         "count": 1,
         "tags": {
+          "status": "ok"
+        }
+      }
+    ],
+    "scheduler.run": [
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "RARITY",
           "status": "ok"
         }
       }
