@@ -1,31 +1,31 @@
 {
   "meta": {
-    "generated_at": "2026-01-05T10:00:01.304Z",
+    "generated_at": "2026-01-05T12:00:02.314Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-07T10:00:01.304Z",
-      "end": "2026-01-05T10:00:01.304Z"
+      "start": "2025-10-07T12:00:02.314Z",
+      "end": "2026-01-05T12:00:02.314Z"
     }
   },
   "overview": {
     "last_24h": {
       "command.invoked": 29,
       "command.latency": 29,
-      "external.fetch": 30,
+      "external.fetch": 34,
       "leaderboard.refresh": 3,
-      "promo.refresh": 4,
-      "rarity.refresh": 8,
-      "rpg.fetch": 22
+      "promo.refresh": 5,
+      "rarity.refresh": 10,
+      "rpg.fetch": 24
     },
     "last_7d": {
       "command.invoked": 29,
       "command.latency": 29,
-      "external.fetch": 30,
+      "external.fetch": 34,
       "leaderboard.refresh": 3,
-      "promo.refresh": 4,
-      "rarity.refresh": 8,
-      "rpg.fetch": 22
+      "promo.refresh": 5,
+      "rarity.refresh": 10,
+      "rpg.fetch": 24
     },
     "top_commands_24h": [
       {
@@ -419,6 +419,30 @@
           "source": "rarity4",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-05T11:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T11:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T11:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rarity4",
+          "status": "ok"
+        }
       }
     ],
     "leaderboard.refresh": [
@@ -442,6 +466,14 @@
       },
       {
         "ts": "2026-01-05T08:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "startup",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T11:00:00.000Z",
         "count": 1,
         "tags": {
           "reason": "startup",
@@ -481,6 +513,22 @@
           "kind": "main",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-05T11:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "l4",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T11:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
       }
     ],
     "rpg.fetch": [
@@ -511,6 +559,22 @@
       {
         "ts": "2026-01-05T08:00:00.000Z",
         "count": 2,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T11:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T11:00:00.000Z",
+        "count": 1,
         "tags": {
           "method": "GET",
           "status": "ok"
