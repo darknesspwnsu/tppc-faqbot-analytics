@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-01-05T06:00:00.374Z",
+    "generated_at": "2026-01-05T07:00:00.417Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-07T06:00:00.374Z",
-      "end": "2026-01-05T06:00:00.374Z"
+      "start": "2025-10-07T07:00:00.417Z",
+      "end": "2026-01-05T07:00:00.417Z"
     }
   },
   "overview": {
@@ -15,8 +15,8 @@
       "promo.refresh": 1,
       "rarity.refresh": 2,
       "rpg.fetch": 19,
-      "command.invoked": 290,
-      "command.latency": 290,
+      "command.invoked": 307,
+      "command.latency": 307,
       "notifyme.trigger": 26,
       "notifyme.set": 1,
       "remindme.list": 1
@@ -27,8 +27,8 @@
       "promo.refresh": 1,
       "rarity.refresh": 2,
       "rpg.fetch": 19,
-      "command.invoked": 290,
-      "command.latency": 290,
+      "command.invoked": 307,
+      "command.latency": 307,
       "notifyme.trigger": 26,
       "notifyme.set": 1,
       "remindme.list": 1
@@ -36,11 +36,11 @@
     "top_commands_24h": [
       {
         "cmd": "!ft",
-        "count": 77
+        "count": 89
       },
       {
         "cmd": "!id",
-        "count": 45
+        "count": 48
       },
       {
         "cmd": "!rarity",
@@ -52,7 +52,7 @@
       },
       {
         "cmd": "!roll",
-        "count": 11
+        "count": 12
       }
     ],
     "top_errors_24h": []
@@ -937,6 +937,42 @@
           "cmd": "helpcat:",
           "status": "ok",
           "type": "component"
+        }
+      },
+      {
+        "ts": "2026-01-05T06:00:00.000Z",
+        "count": 12,
+        "tags": {
+          "cmd": "!ft",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!l4",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T06:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "cmd": "!id",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!roll",
+          "status": "ok",
+          "type": "bang"
         }
       }
     ],
@@ -1973,6 +2009,60 @@
         "tags": {
           "bucket": "lt500",
           "cmd": "!l4",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T06:00:00.000Z",
+        "count": 9,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "!l4",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!roll",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T06:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T06:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "!id",
           "type": "bang"
         }
       }
