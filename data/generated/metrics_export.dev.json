@@ -1,40 +1,54 @@
 {
   "meta": {
-    "generated_at": "2026-01-05T12:00:02.314Z",
+    "generated_at": "2026-01-05T13:00:01.650Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-07T12:00:02.314Z",
-      "end": "2026-01-05T12:00:02.314Z"
+      "start": "2025-10-07T13:00:01.650Z",
+      "end": "2026-01-05T13:00:01.650Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 29,
-      "command.latency": 29,
-      "external.fetch": 34,
+      "command.invoked": 39,
+      "command.latency": 39,
+      "external.fetch": 47,
       "leaderboard.refresh": 3,
-      "promo.refresh": 5,
-      "rarity.refresh": 10,
-      "rpg.fetch": 24
+      "promo.refresh": 8,
+      "rarity.refresh": 17,
+      "rpg.fetch": 30,
+      "notifyme.clear": 1,
+      "notifyme.list": 2,
+      "notifyme.set": 2,
+      "notifyme.trigger": 1,
+      "scheduler.run": 4
     },
     "last_7d": {
-      "command.invoked": 29,
-      "command.latency": 29,
-      "external.fetch": 34,
+      "command.invoked": 39,
+      "command.latency": 39,
+      "external.fetch": 47,
       "leaderboard.refresh": 3,
-      "promo.refresh": 5,
-      "rarity.refresh": 10,
-      "rpg.fetch": 24
+      "promo.refresh": 8,
+      "rarity.refresh": 17,
+      "rpg.fetch": 30,
+      "notifyme.clear": 1,
+      "notifyme.list": 2,
+      "notifyme.set": 2,
+      "notifyme.trigger": 1,
+      "scheduler.run": 4
     },
     "top_commands_24h": [
+      {
+        "cmd": "!rarity",
+        "count": 9
+      },
       {
         "cmd": "!export",
         "count": 6
       },
       {
-        "cmd": "!rarity",
-        "count": 6
+        "cmd": "notifyme",
+        "count": 5
       },
       {
         "cmd": "!ft",
@@ -42,10 +56,6 @@
       },
       {
         "cmd": "help",
-        "count": 2
-      },
-      {
-        "cmd": "!p",
         "count": 2
       }
     ],
@@ -184,6 +194,33 @@
         "count": 1,
         "tags": {
           "cmd": "!eggtimes",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "!echo",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "cmd": "notifyme",
+          "status": "ok",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "cmd": "!rarity",
           "status": "ok",
           "type": "bang"
         }
@@ -369,6 +406,60 @@
           "cmd": "!eggtimes",
           "type": "bang"
         }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "notifyme",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "notifyme",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!echo",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "notifyme",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt250",
+          "cmd": "!echo",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "!rarity",
+          "type": "bang"
+        }
       }
     ],
     "external.fetch": [
@@ -443,6 +534,30 @@
           "source": "rarity4",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "source": "rarity4",
+          "status": "ok"
+        }
       }
     ],
     "leaderboard.refresh": [
@@ -475,6 +590,14 @@
       {
         "ts": "2026-01-05T11:00:00.000Z",
         "count": 1,
+        "tags": {
+          "reason": "startup",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 3,
         "tags": {
           "reason": "startup",
           "status": "ok"
@@ -529,6 +652,22 @@
           "kind": "main",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "kind": "l4",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
       }
     ],
     "rpg.fetch": [
@@ -577,6 +716,76 @@
         "count": 1,
         "tags": {
           "method": "GET",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
+      }
+    ],
+    "notifyme.clear": [
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "status": "ok"
+        }
+      }
+    ],
+    "notifyme.list": [
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "status": "ok"
+        }
+      }
+    ],
+    "notifyme.set": [
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "status": "ok"
+        }
+      }
+    ],
+    "notifyme.trigger": [
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "status": "ok"
+        }
+      }
+    ],
+    "scheduler.run": [
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "RARITY",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "name": "radio_tower",
           "status": "ok"
         }
       }
