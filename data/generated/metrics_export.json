@@ -1,36 +1,36 @@
 {
   "meta": {
-    "generated_at": "2026-01-05T14:00:00.504Z",
+    "generated_at": "2026-01-05T15:00:00.663Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-07T14:00:00.504Z",
-      "end": "2026-01-05T14:00:00.504Z"
+      "start": "2025-10-07T15:00:00.663Z",
+      "end": "2026-01-05T15:00:00.663Z"
     }
   },
   "overview": {
     "last_24h": {
-      "external.fetch": 42,
-      "leaderboard.refresh": 1,
+      "external.fetch": 44,
+      "leaderboard.refresh": 2,
       "promo.refresh": 2,
       "rarity.refresh": 3,
-      "rpg.fetch": 39,
-      "command.invoked": 383,
-      "command.latency": 383,
-      "notifyme.trigger": 30,
+      "rpg.fetch": 41,
+      "command.invoked": 385,
+      "command.latency": 385,
+      "notifyme.trigger": 33,
       "notifyme.set": 1,
       "remindme.list": 1,
       "scheduler.run": 1
     },
     "last_7d": {
-      "external.fetch": 42,
-      "leaderboard.refresh": 1,
+      "external.fetch": 44,
+      "leaderboard.refresh": 2,
       "promo.refresh": 2,
       "rarity.refresh": 3,
-      "rpg.fetch": 39,
-      "command.invoked": 383,
-      "command.latency": 383,
-      "notifyme.trigger": 30,
+      "rpg.fetch": 41,
+      "command.invoked": 385,
+      "command.latency": 385,
+      "notifyme.trigger": 33,
       "notifyme.set": 1,
       "remindme.list": 1,
       "scheduler.run": 1
@@ -38,7 +38,7 @@
     "top_commands_24h": [
       {
         "cmd": "!ft",
-        "count": 107
+        "count": 109
       },
       {
         "cmd": "!id",
@@ -156,11 +156,27 @@
           "source": "rarity",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-05T14:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
       }
     ],
     "leaderboard.refresh": [
       {
         "ts": "2026-01-04T21:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T14:00:00.000Z",
         "count": 1,
         "tags": {
           "kind": "training",
@@ -351,6 +367,22 @@
       },
       {
         "ts": "2026-01-05T11:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T14:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T14:00:00.000Z",
         "count": 1,
         "tags": {
           "method": "GET",
@@ -1399,6 +1431,15 @@
         "count": 1,
         "tags": {
           "cmd": "!rarity",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-05T14:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "!ft",
           "status": "ok",
           "type": "bang"
         }
@@ -2898,6 +2939,15 @@
           "cmd": "!rarity",
           "type": "bang"
         }
+      },
+      {
+        "ts": "2026-01-05T14:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!ft",
+          "type": "bang"
+        }
       }
     ],
     "notifyme.trigger": [
@@ -2946,6 +2996,13 @@
       {
         "ts": "2026-01-05T11:00:00.000Z",
         "count": 1,
+        "tags": {
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-05T14:00:00.000Z",
+        "count": 3,
         "tags": {
           "status": "ok"
         }
