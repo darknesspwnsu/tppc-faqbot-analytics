@@ -1,22 +1,22 @@
 {
   "meta": {
-    "generated_at": "2026-01-10T06:00:00.562Z",
+    "generated_at": "2026-01-10T07:00:00.659Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-12T06:00:00.562Z",
-      "end": "2026-01-10T06:00:00.562Z"
+      "start": "2025-10-12T07:00:00.659Z",
+      "end": "2026-01-10T07:00:00.659Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 257,
-      "command.latency": 257,
-      "events.subscriptions.by_event": 1225,
-      "events.subscriptions.snapshot": 145,
-      "notifyme.trigger": 140,
-      "external.fetch": 26,
-      "rpg.fetch": 22,
+      "command.invoked": 259,
+      "command.latency": 259,
+      "events.subscriptions.by_event": 1226,
+      "events.subscriptions.snapshot": 146,
+      "notifyme.trigger": 141,
+      "external.fetch": 31,
+      "rpg.fetch": 27,
       "rarity.refresh": 1,
       "scheduler.run": 3,
       "notifyme.set": 8,
@@ -28,14 +28,14 @@
       "events.subscriptions.subscribe": 1
     },
     "last_7d": {
-      "external.fetch": 219,
+      "external.fetch": 224,
       "leaderboard.refresh": 11,
       "promo.refresh": 6,
       "rarity.refresh": 15,
-      "rpg.fetch": 187,
-      "command.invoked": 2149,
-      "command.latency": 2149,
-      "notifyme.trigger": 433,
+      "rpg.fetch": 192,
+      "command.invoked": 2156,
+      "command.latency": 2156,
+      "notifyme.trigger": 435,
       "notifyme.set": 18,
       "remindme.list": 1,
       "scheduler.run": 22,
@@ -43,8 +43,8 @@
       "events.list": 3,
       "events.subscriptions.subscribe": 7,
       "welcome.dm": 7,
-      "events.subscriptions.by_event": 4678,
-      "events.subscriptions.snapshot": 547,
+      "events.subscriptions.by_event": 4730,
+      "events.subscriptions.snapshot": 554,
       "dm.fail": 1,
       "remindme.trigger": 1,
       "notifyme.list": 1
@@ -52,23 +52,23 @@
     "top_commands_24h": [
       {
         "cmd": "!ft",
-        "count": 59
+        "count": 60
       },
       {
         "cmd": "!rarity",
-        "count": 51
+        "count": 50
+      },
+      {
+        "cmd": "!lf",
+        "count": 22
       },
       {
         "cmd": "hol:",
         "count": 21
       },
       {
-        "cmd": "!lf",
-        "count": 20
-      },
-      {
         "cmd": "!yap",
-        "count": 11
+        "count": 10
       }
     ],
     "top_errors_24h": []
@@ -622,6 +622,14 @@
       {
         "ts": "2026-01-10T04:00:00.000Z",
         "count": 2,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 5,
         "tags": {
           "source": "rpg",
           "status": "ok"
@@ -1638,6 +1646,22 @@
       {
         "ts": "2026-01-10T04:00:00.000Z",
         "count": 1,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 3,
         "tags": {
           "method": "GET",
           "status": "ok"
@@ -7880,6 +7904,51 @@
           "cmd": "whisper",
           "status": "ok",
           "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!ft",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!wiki",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!rpginfo",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "!lf",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "!lb",
+          "status": "ok",
+          "type": "bang"
         }
       }
     ],
@@ -16874,6 +16943,60 @@
           "cmd": "!events",
           "type": "bang"
         }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!rpginfo",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!wiki",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!lb",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!lf",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!lf",
+          "type": "bang"
+        }
       }
     ],
     "notifyme.trigger": [
@@ -17524,6 +17647,13 @@
       {
         "ts": "2026-01-10T05:00:00.000Z",
         "count": 8,
+        "tags": {
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-10T06:00:00.000Z",
+        "count": 2,
         "tags": {
           "status": "ok"
         }
@@ -24939,6 +25069,83 @@
         "tags": {
           "event_id": "winter_golden_day"
         }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "deerling"
+        }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "halloween"
+        }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "valentines"
+        }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "weekly_promo"
+        }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "easter"
+        }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "team_rocket"
+        }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "august_golden_day"
+        }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "cherubi"
+        }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "scatterbug"
+        }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "event_id": "discord_announcements"
+        }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "winter_golden_day"
+        }
       }
     ],
     "events.subscriptions.snapshot": [
@@ -26225,6 +26432,20 @@
       },
       {
         "ts": "2026-01-10T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-01-10T07:00:00.000Z",
         "count": 1,
         "tags": {
           "type": "users_with_all"
