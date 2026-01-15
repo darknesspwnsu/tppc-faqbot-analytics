@@ -1,40 +1,40 @@
 {
   "meta": {
-    "generated_at": "2026-01-15T11:00:01.872Z",
+    "generated_at": "2026-01-15T13:00:01.645Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-17T11:00:01.872Z",
-      "end": "2026-01-15T11:00:01.872Z"
+      "start": "2025-10-17T13:00:01.645Z",
+      "end": "2026-01-15T13:00:01.645Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 83,
-      "command.latency": 83,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 159,
-      "promo.refresh": 15,
-      "rarity.refresh": 31,
-      "rpg.fetch": 53,
-      "scheduler.run": 48,
-      "leaderboard.refresh": 2
+      "external.fetch": 98,
+      "leaderboard.refresh": 2,
+      "rpg.fetch": 43,
+      "command.invoked": 54,
+      "command.latency": 54,
+      "scheduler.run": 33,
+      "promo.refresh": 10,
+      "rarity.refresh": 21
     },
     "last_7d": {
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 366,
+      "external.fetch": 367,
       "leaderboard.refresh": 11,
       "promo.refresh": 40,
-      "rarity.refresh": 85,
+      "rarity.refresh": 86,
       "rpg.fetch": 206,
-      "scheduler.run": 124,
+      "scheduler.run": 125,
       "command.invoked": 149,
       "command.latency": 149
     },
     "top_commands_24h": [
       {
         "cmd": "!lotto",
-        "count": 53
+        "count": 26
       },
       {
         "cmd": "!sprite",
@@ -42,7 +42,7 @@
       },
       {
         "cmd": "!rarity",
-        "count": 5
+        "count": 4
       },
       {
         "cmd": "!ft",
@@ -3300,6 +3300,14 @@
           "source": "rarity4",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-15T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
       }
     ],
     "leaderboard.refresh": [
@@ -4189,6 +4197,14 @@
       },
       {
         "ts": "2026-01-15T10:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-15T12:00:00.000Z",
         "count": 1,
         "tags": {
           "kind": "main",
@@ -5576,6 +5592,14 @@
           "name": "radio_tower_event",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-15T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "RARITY",
+          "status": "ok"
+        }
       }
     ],
     "events.list": [
@@ -6591,6 +6615,34 @@
       },
       {
         "ts": "2026-01-15T10:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-01-15T11:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-01-15T11:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-01-15T12:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-01-15T12:00:00.000Z",
         "count": 0,
         "tags": {
           "type": "users_with_all"
