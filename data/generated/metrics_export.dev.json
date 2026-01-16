@@ -1,22 +1,22 @@
 {
   "meta": {
-    "generated_at": "2026-01-16T03:59:59.244Z",
+    "generated_at": "2026-01-16T04:59:58.991Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-18T03:59:59.244Z",
-      "end": "2026-01-16T03:59:59.244Z"
+      "start": "2025-10-18T04:59:58.991Z",
+      "end": "2026-01-16T04:59:58.991Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 52,
-      "command.latency": 52,
       "events.subscriptions.snapshot": 0,
-      "scheduler.run": 33,
       "external.fetch": 96,
       "leaderboard.refresh": 2,
       "rpg.fetch": 43,
+      "scheduler.run": 33,
+      "command.invoked": 49,
+      "command.latency": 49,
       "promo.refresh": 10,
       "rarity.refresh": 21
     },
@@ -27,7 +27,7 @@
       "promo.refresh": 40,
       "rarity.refresh": 86,
       "rpg.fetch": 208,
-      "scheduler.run": 125,
+      "scheduler.run": 126,
       "command.invoked": 155,
       "command.latency": 155
     },
@@ -45,12 +45,12 @@
         "count": 4
       },
       {
-        "cmd": "!ft",
+        "cmd": "!lb",
         "count": 3
       },
       {
-        "cmd": "!lb",
-        "count": 3
+        "cmd": "!l4",
+        "count": 2
       }
     ],
     "top_errors_24h": []
@@ -5686,6 +5686,14 @@
           "name": "RARITY",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "radio_tower_event",
+          "status": "ok"
+        }
       }
     ],
     "events.list": [
@@ -6939,6 +6947,20 @@
       },
       {
         "ts": "2026-01-16T03:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
         "count": 0,
         "tags": {
           "type": "users_with_all"
