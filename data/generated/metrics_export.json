@@ -1,22 +1,22 @@
 {
   "meta": {
-    "generated_at": "2026-01-16T03:00:00.531Z",
+    "generated_at": "2026-01-16T04:00:00.508Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-18T03:00:00.531Z",
-      "end": "2026-01-16T03:00:00.531Z"
+      "start": "2025-10-18T04:00:00.508Z",
+      "end": "2026-01-16T04:00:00.508Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 355,
-      "command.latency": 355,
+      "command.invoked": 358,
+      "command.latency": 358,
       "events.subscriptions.by_event": 1300,
       "events.subscriptions.snapshot": 175,
-      "external.fetch": 57,
-      "notifyme.trigger": 353,
-      "rpg.fetch": 50,
+      "external.fetch": 69,
+      "notifyme.trigger": 351,
+      "rpg.fetch": 62,
       "scheduler.run": 5,
       "remindme.list": 1,
       "remindme.set": 1,
@@ -30,17 +30,17 @@
       "promo.refresh": 1
     },
     "last_7d": {
-      "command.invoked": 2515,
-      "command.latency": 2515,
-      "events.subscriptions.by_event": 8970,
-      "events.subscriptions.snapshot": 1185,
-      "notifyme.set": 23,
-      "notifyme.trigger": 997,
+      "command.invoked": 2511,
+      "command.latency": 2511,
+      "events.subscriptions.by_event": 8971,
+      "events.subscriptions.snapshot": 1186,
       "remindme.set": 7,
       "scheduler.run": 31,
-      "external.fetch": 462,
-      "rpg.fetch": 422,
+      "external.fetch": 476,
+      "rpg.fetch": 436,
+      "notifyme.trigger": 1000,
       "rarity.refresh": 21,
+      "notifyme.set": 21,
       "leaderboard.refresh": 10,
       "remindme.trigger": 4,
       "welcome.dm": 5,
@@ -57,19 +57,19 @@
     "top_commands_24h": [
       {
         "cmd": "!ft",
-        "count": 102
+        "count": 99
       },
       {
         "cmd": "!rarity",
-        "count": 49
+        "count": 52
       },
       {
         "cmd": "!sprite",
-        "count": 36
+        "count": 35
       },
       {
         "cmd": "!lf",
-        "count": 22
+        "count": 23
       },
       {
         "cmd": "notifyme",
@@ -99,6 +99,22 @@
           "type": "component"
         },
         "count": 2
+      },
+      {
+        "metric": "external.fetch",
+        "tags": {
+          "source": "rpg",
+          "status": "error"
+        },
+        "count": 1
+      },
+      {
+        "metric": "rpg.fetch",
+        "tags": {
+          "method": "GET",
+          "status": "error"
+        },
+        "count": 1
       }
     ]
   },
@@ -1419,6 +1435,22 @@
       {
         "ts": "2026-01-16T02:00:00.000Z",
         "count": 4,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rpg",
+          "status": "error"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 13,
         "tags": {
           "source": "rpg",
           "status": "ok"
@@ -3883,6 +3915,30 @@
       {
         "ts": "2026-01-16T02:00:00.000Z",
         "count": 2,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "method": "GET",
+          "status": "error"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 9,
         "tags": {
           "method": "GET",
           "status": "ok"
@@ -16907,6 +16963,60 @@
       {
         "ts": "2026-01-16T02:00:00.000Z",
         "count": 1,
+        "tags": {
+          "cmd": "!rarity",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "cmd": "!ft",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!l4",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!lf",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "viewbox",
+          "status": "ok",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "cmd": "sortbox",
+          "status": "ok",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 6,
         "tags": {
           "cmd": "!rarity",
           "status": "ok",
@@ -35904,6 +36014,96 @@
           "cmd": "!sprite",
           "type": "bang"
         }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "sortbox",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "!rarity",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!lf",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "viewbox",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!rarity",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "!rarity",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "gte3000",
+          "cmd": "sortbox",
+          "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!l4",
+          "type": "bang"
+        }
       }
     ],
     "notifyme.trigger": [
@@ -37394,6 +37594,13 @@
       {
         "ts": "2026-01-16T02:00:00.000Z",
         "count": 6,
+        "tags": {
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-16T03:00:00.000Z",
+        "count": 11,
         "tags": {
           "status": "ok"
         }
@@ -55977,6 +56184,83 @@
         "tags": {
           "event_id": "winter_golden_day"
         }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "deerling"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "halloween"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "valentines"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "weekly_promo"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "easter"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "team_rocket"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "august_golden_day"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "cherubi"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "scatterbug"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "event_id": "discord_announcements"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "winter_golden_day"
+        }
       }
     ],
     "events.subscriptions.snapshot": [
@@ -59237,6 +59521,20 @@
       },
       {
         "ts": "2026-01-16T03:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-01-16T04:00:00.000Z",
         "count": 1,
         "tags": {
           "type": "users_with_all"
