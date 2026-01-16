@@ -1,33 +1,33 @@
 {
   "meta": {
-    "generated_at": "2026-01-16T04:59:58.991Z",
+    "generated_at": "2026-01-16T05:59:58.476Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-18T04:59:58.991Z",
-      "end": "2026-01-16T04:59:58.991Z"
+      "start": "2025-10-18T05:59:58.476Z",
+      "end": "2026-01-16T05:59:58.476Z"
     }
   },
   "overview": {
     "last_24h": {
-      "events.subscriptions.snapshot": 0,
-      "external.fetch": 96,
-      "leaderboard.refresh": 2,
-      "rpg.fetch": 43,
-      "scheduler.run": 33,
       "command.invoked": 49,
       "command.latency": 49,
+      "events.subscriptions.snapshot": 0,
+      "external.fetch": 96,
       "promo.refresh": 10,
-      "rarity.refresh": 21
+      "rarity.refresh": 21,
+      "rpg.fetch": 43,
+      "scheduler.run": 33,
+      "leaderboard.refresh": 2
     },
     "last_7d": {
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 369,
-      "leaderboard.refresh": 12,
+      "external.fetch": 374,
+      "leaderboard.refresh": 13,
       "promo.refresh": 40,
       "rarity.refresh": 86,
-      "rpg.fetch": 208,
-      "scheduler.run": 126,
+      "rpg.fetch": 213,
+      "scheduler.run": 127,
       "command.invoked": 155,
       "command.latency": 155
     },
@@ -3370,6 +3370,14 @@
           "source": "rpg",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-16T05:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
       }
     ],
     "leaderboard.refresh": [
@@ -3487,6 +3495,14 @@
       },
       {
         "ts": "2026-01-15T14:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-16T05:00:00.000Z",
         "count": 1,
         "tags": {
           "kind": "training",
@@ -4922,6 +4938,22 @@
           "method": "GET",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-16T05:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-16T05:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
       }
     ],
     "notifyme.clear": [
@@ -5689,6 +5721,14 @@
       },
       {
         "ts": "2026-01-16T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "radio_tower_event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-16T05:00:00.000Z",
         "count": 1,
         "tags": {
           "name": "radio_tower_event",
@@ -6961,6 +7001,20 @@
       },
       {
         "ts": "2026-01-16T04:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-01-16T05:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-01-16T05:00:00.000Z",
         "count": 0,
         "tags": {
           "type": "users_with_all"
