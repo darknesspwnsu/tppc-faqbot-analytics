@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generated_at": "2026-01-16T22:00:00.300Z",
+    "generated_at": "2026-01-16T22:59:59.887Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-18T22:00:00.300Z",
-      "end": "2026-01-16T22:00:00.300Z"
+      "start": "2025-10-18T22:59:59.887Z",
+      "end": "2026-01-16T22:59:59.887Z"
     }
   },
   "overview": {
     "last_24h": {
       "events.subscriptions.snapshot": 0,
-      "command.invoked": 28,
-      "command.latency": 28,
+      "command.invoked": 32,
+      "command.latency": 32,
       "scheduler.run": 18,
       "external.fetch": 36,
       "leaderboard.refresh": 2,
@@ -21,8 +21,8 @@
       "rarity.refresh": 11
     },
     "last_7d": {
-      "command.invoked": 177,
-      "command.latency": 177,
+      "command.invoked": 181,
+      "command.latency": 181,
       "events.subscriptions.snapshot": 0,
       "external.fetch": 397,
       "leaderboard.refresh": 13,
@@ -34,11 +34,11 @@
     "top_commands_24h": [
       {
         "cmd": "!m8ball",
-        "count": 8
+        "count": 10
       },
       {
         "cmd": "!rarity",
-        "count": 6
+        "count": 7
       },
       {
         "cmd": "!lotto",
@@ -1112,6 +1112,33 @@
       },
       {
         "ts": "2026-01-16T20:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!rarity",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T22:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "!m8ball",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T22:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "?l4",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T22:00:00.000Z",
         "count": 1,
         "tags": {
           "cmd": "!rarity",
@@ -2648,6 +2675,42 @@
         "tags": {
           "bucket": "lt100",
           "cmd": "!rarity",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T22:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt3000",
+          "cmd": "!m8ball",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T22:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "?l4",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T22:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "!rarity",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-16T22:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!m8ball",
           "type": "bang"
         }
       }
@@ -7713,6 +7776,20 @@
       },
       {
         "ts": "2026-01-16T21:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-01-16T22:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-01-16T22:00:00.000Z",
         "count": 0,
         "tags": {
           "type": "users_with_all"
