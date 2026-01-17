@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generated_at": "2026-01-17T00:59:59.702Z",
+    "generated_at": "2026-01-17T01:59:59.547Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-19T00:59:59.702Z",
-      "end": "2026-01-17T00:59:59.702Z"
+      "start": "2025-10-19T01:59:59.547Z",
+      "end": "2026-01-17T01:59:59.547Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 32,
-      "command.latency": 32,
       "events.subscriptions.snapshot": 0,
+      "command.invoked": 28,
+      "command.latency": 28,
       "scheduler.run": 18,
       "external.fetch": 36,
       "leaderboard.refresh": 2,
@@ -21,13 +21,13 @@
       "rarity.refresh": 11
     },
     "last_7d": {
-      "command.invoked": 169,
-      "command.latency": 169,
+      "command.invoked": 168,
+      "command.latency": 168,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 338,
-      "rpg.fetch": 166,
+      "external.fetch": 336,
       "promo.refresh": 41,
       "rarity.refresh": 89,
+      "rpg.fetch": 164,
       "scheduler.run": 131,
       "leaderboard.refresh": 10
     },
@@ -37,12 +37,12 @@
         "count": 10
       },
       {
-        "cmd": "!rarity",
-        "count": 7
-      },
-      {
         "cmd": "!lotto",
         "count": 6
+      },
+      {
+        "cmd": "!rarity",
+        "count": 5
       },
       {
         "cmd": "whisper",
@@ -50,7 +50,7 @@
       },
       {
         "cmd": "!l4",
-        "count": 3
+        "count": 1
       }
     ],
     "top_errors_24h": []
@@ -7818,6 +7818,20 @@
       },
       {
         "ts": "2026-01-17T00:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-01-17T01:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-01-17T01:00:00.000Z",
         "count": 0,
         "tags": {
           "type": "users_with_all"
