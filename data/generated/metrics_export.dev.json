@@ -1,34 +1,34 @@
 {
   "meta": {
-    "generated_at": "2026-01-17T03:59:59.033Z",
+    "generated_at": "2026-01-17T04:59:59.087Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-19T03:59:59.033Z",
-      "end": "2026-01-17T03:59:59.033Z"
+      "start": "2025-10-19T04:59:59.087Z",
+      "end": "2026-01-17T04:59:59.087Z"
     }
   },
   "overview": {
     "last_24h": {
       "events.subscriptions.snapshot": 0,
-      "scheduler.run": 18,
-      "external.fetch": 36,
+      "external.fetch": 38,
       "leaderboard.refresh": 2,
-      "rpg.fetch": 17,
-      "command.invoked": 26,
-      "command.latency": 26,
-      "promo.refresh": 5,
+      "rpg.fetch": 19,
+      "scheduler.run": 19,
+      "command.invoked": 27,
+      "command.latency": 27,
+      "promo.refresh": 6,
       "rarity.refresh": 11
     },
     "last_7d": {
-      "command.invoked": 168,
-      "command.latency": 168,
+      "command.invoked": 169,
+      "command.latency": 169,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 336,
-      "promo.refresh": 41,
+      "external.fetch": 338,
+      "promo.refresh": 42,
       "rarity.refresh": 89,
-      "rpg.fetch": 164,
-      "scheduler.run": 131,
+      "rpg.fetch": 166,
+      "scheduler.run": 133,
       "leaderboard.refresh": 10
     },
     "top_commands_24h": [
@@ -1142,6 +1142,15 @@
         "count": 1,
         "tags": {
           "cmd": "!rarity",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-01-17T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "?rarity",
           "status": "ok",
           "type": "bang"
         }
@@ -2713,6 +2722,15 @@
           "cmd": "!m8ball",
           "type": "bang"
         }
+      },
+      {
+        "ts": "2026-01-17T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "?rarity",
+          "type": "bang"
+        }
       }
     ],
     "external.fetch": [
@@ -3691,6 +3709,14 @@
           "source": "rpg",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-17T04:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
       }
     ],
     "leaderboard.refresh": [
@@ -4109,6 +4135,14 @@
         "count": 2,
         "tags": {
           "reason": "startup",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-17T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
           "status": "ok"
         }
       }
@@ -5411,6 +5445,22 @@
           "method": "GET",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-17T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-17T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
       }
     ],
     "notifyme.clear": [
@@ -6267,6 +6317,22 @@
       {
         "ts": "2026-01-16T12:00:00.000Z",
         "count": 2,
+        "tags": {
+          "name": "radio_tower_event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-17T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "rpg_events",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-17T04:00:00.000Z",
+        "count": 1,
         "tags": {
           "name": "radio_tower_event",
           "status": "ok"
@@ -7860,6 +7926,20 @@
       },
       {
         "ts": "2026-01-17T03:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-01-17T04:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-01-17T04:00:00.000Z",
         "count": 0,
         "tags": {
           "type": "users_with_all"
