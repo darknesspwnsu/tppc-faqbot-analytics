@@ -1,35 +1,35 @@
 {
   "meta": {
-    "generated_at": "2026-01-18T12:00:01.752Z",
+    "generated_at": "2026-01-18T13:00:01.148Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-10-20T12:00:01.752Z",
-      "end": "2026-01-18T12:00:01.752Z"
+      "start": "2025-10-20T13:00:01.148Z",
+      "end": "2026-01-18T13:00:01.148Z"
     }
   },
   "overview": {
     "last_24h": {
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 39,
+      "external.fetch": 40,
       "leaderboard.refresh": 3,
       "rpg.fetch": 27,
       "command.invoked": 31,
       "command.latency": 31,
       "promo.refresh": 8,
-      "rarity.refresh": 12,
-      "scheduler.run": 22
+      "rarity.refresh": 13,
+      "scheduler.run": 23
     },
     "last_7d": {
-      "events.subscriptions.snapshot": 0,
-      "external.fetch": 344,
+      "external.fetch": 345,
       "leaderboard.refresh": 14,
       "rpg.fetch": 171,
       "command.invoked": 188,
       "command.latency": 188,
+      "events.subscriptions.snapshot": 0,
       "promo.refresh": 46,
-      "rarity.refresh": 90,
-      "scheduler.run": 144
+      "rarity.refresh": 91,
+      "scheduler.run": 145
     },
     "top_commands_24h": [
       {
@@ -4441,6 +4441,14 @@
           "source": "rarity4",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-01-18T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
       }
     ],
     "leaderboard.refresh": [
@@ -5650,6 +5658,14 @@
       },
       {
         "ts": "2026-01-18T11:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-18T12:00:00.000Z",
         "count": 1,
         "tags": {
           "kind": "main",
@@ -7627,6 +7643,14 @@
         "count": 1,
         "tags": {
           "name": "radio_tower_event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-01-18T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "RARITY",
           "status": "ok"
         }
       }
