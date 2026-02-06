@@ -1,37 +1,37 @@
 {
   "meta": {
-    "generated_at": "2026-02-06T01:00:03.278Z",
+    "generated_at": "2026-02-06T02:00:03.369Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-11-08T01:00:03.278Z",
-      "end": "2026-02-06T01:00:03.278Z"
+      "start": "2025-11-08T02:00:03.369Z",
+      "end": "2026-02-06T02:00:03.369Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 80,
-      "command.latency": 80,
+      "command.invoked": 75,
+      "command.latency": 75,
       "events.subscriptions.by_event": 1272,
       "events.subscriptions.snapshot": 192,
-      "notifyme.trigger": 122,
-      "external.fetch": 31,
-      "rpg.fetch": 18,
+      "external.fetch": 33,
+      "rpg.fetch": 20,
+      "notifyme.trigger": 121,
       "scheduler.run": 2,
       "leaderboard.refresh": 3,
       "rarity.refresh": 1,
       "notifyme.set": 2
     },
     "last_7d": {
-      "command.invoked": 673,
-      "command.latency": 673,
+      "command.invoked": 672,
+      "command.latency": 672,
       "events.subscriptions.by_event": 8904,
       "events.subscriptions.snapshot": 1344,
-      "notifyme.trigger": 834,
+      "notifyme.trigger": 836,
       "scheduler.run": 16,
       "dm.fail": 12,
-      "external.fetch": 208,
-      "rpg.fetch": 112,
+      "external.fetch": 210,
+      "rpg.fetch": 114,
       "rarity.refresh": 7,
       "leaderboard.refresh": 11,
       "remindme.set": 2,
@@ -45,11 +45,11 @@
     "top_commands_24h": [
       {
         "cmd": "!ft",
-        "count": 18
+        "count": 16
       },
       {
         "cmd": "!rarity",
-        "count": 11
+        "count": 10
       },
       {
         "cmd": "!yap",
@@ -3449,6 +3449,14 @@
         "count": 8,
         "tags": {
           "source": "lotto",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-06T01:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "source": "rpg",
           "status": "ok"
         }
       }
@@ -9311,6 +9319,22 @@
       {
         "ts": "2026-02-05T21:00:00.000Z",
         "count": 2,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-06T01:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-06T01:00:00.000Z",
+        "count": 1,
         "tags": {
           "method": "GET",
           "status": "ok"
@@ -35387,6 +35411,24 @@
         "count": 1,
         "tags": {
           "cmd": "!rarity",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-02-06T01:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!ft",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-02-06T01:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!sprite",
           "status": "ok",
           "type": "bang"
         }
@@ -72031,6 +72073,24 @@
           "cmd": "!lotto",
           "type": "bang"
         }
+      },
+      {
+        "ts": "2026-02-06T01:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!ft",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-02-06T01:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!sprite",
+          "type": "bang"
+        }
       }
     ],
     "notifyme.trigger": [
@@ -76076,6 +76136,13 @@
       {
         "ts": "2026-02-05T23:00:00.000Z",
         "count": 3,
+        "tags": {
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-06T01:00:00.000Z",
+        "count": 4,
         "tags": {
           "status": "ok"
         }
@@ -134181,6 +134248,83 @@
         "tags": {
           "event_id": "winter_golden_day"
         }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "deerling"
+        }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "halloween"
+        }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "valentines"
+        }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "weekly_promo"
+        }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "easter"
+        }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "team_rocket"
+        }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "august_golden_day"
+        }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "cherubi"
+        }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "scatterbug"
+        }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "event_id": "discord_announcements"
+        }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "winter_golden_day"
+        }
       }
     ],
     "events.subscriptions.snapshot": [
@@ -144469,6 +144613,20 @@
       },
       {
         "ts": "2026-02-06T01:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-06T02:00:00.000Z",
         "count": 2,
         "tags": {
           "type": "users_with_all"
