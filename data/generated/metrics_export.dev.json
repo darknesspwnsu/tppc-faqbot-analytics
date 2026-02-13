@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-02-13T10:00:02.533Z",
+    "generated_at": "2026-02-13T11:00:05.477Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-11-15T10:00:02.533Z",
-      "end": "2026-02-13T10:00:02.533Z"
+      "start": "2025-11-15T11:00:05.477Z",
+      "end": "2026-02-13T11:00:05.477Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 39,
-      "command.latency": 39,
       "events.subscriptions.snapshot": 0,
       "external.fetch": 201,
-      "scheduler.run": 105,
       "rarity.refresh": 13,
+      "scheduler.run": 105,
       "leaderboard.refresh": 1,
       "rpg.fetch": 16,
+      "command.invoked": 32,
+      "command.latency": 32,
       "promo.refresh": 6,
       "notifyme.ignore": 1,
       "notifyme.list": 1,
@@ -27,11 +27,11 @@
       "command.invoked": 50,
       "command.latency": 50,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 225,
+      "external.fetch": 237,
       "promo.refresh": 12,
       "rarity.refresh": 25,
       "rpg.fetch": 28,
-      "scheduler.run": 123,
+      "scheduler.run": 129,
       "leaderboard.refresh": 1,
       "notifyme.ignore": 1,
       "notifyme.list": 1,
@@ -47,15 +47,15 @@
         "count": 9
       },
       {
-        "cmd": "!gm",
-        "count": 7
-      },
-      {
         "cmd": "!marketpoll",
         "count": 2
       },
       {
         "cmd": "notifyme",
+        "count": 2
+      },
+      {
+        "cmd": "schedule",
         "count": 2
       }
     ],
@@ -7923,6 +7923,14 @@
           "source": "rarity4",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-02-13T10:00:00.000Z",
+        "count": 12,
+        "tags": {
+          "source": "threadwatch",
+          "status": "ok"
+        }
       }
     ],
     "leaderboard.refresh": [
@@ -14214,6 +14222,14 @@
         "count": 1,
         "tags": {
           "name": "radio_tower_event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-13T10:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "name": "threadwatch",
           "status": "ok"
         }
       }
@@ -20775,6 +20791,20 @@
       },
       {
         "ts": "2026-02-13T10:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-13T11:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-13T11:00:00.000Z",
         "count": 0,
         "tags": {
           "type": "users_with_all"
