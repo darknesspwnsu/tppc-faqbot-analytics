@@ -1,38 +1,38 @@
 {
   "meta": {
-    "generated_at": "2026-02-20T04:00:01.920Z",
+    "generated_at": "2026-02-20T05:00:01.979Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-11-22T04:00:01.920Z",
-      "end": "2026-02-20T04:00:01.920Z"
+      "start": "2025-11-22T05:00:01.979Z",
+      "end": "2026-02-20T05:00:01.979Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 86,
-      "command.latency": 86,
-      "dm.fail": 5,
+      "command.invoked": 82,
+      "command.latency": 82,
       "events.subscriptions.by_event": 1272,
       "events.subscriptions.snapshot": 192,
-      "external.fetch": 844,
-      "notifyme.set": 2,
-      "notifyme.trigger": 72,
+      "external.fetch": 841,
+      "notifyme.trigger": 50,
       "scheduler.run": 139,
+      "dm.fail": 4,
       "rarity.refresh": 1,
       "leaderboard.refresh": 1,
-      "rpg.fetch": 9
+      "rpg.fetch": 9,
+      "notifyme.set": 1
     },
     "last_7d": {
-      "command.invoked": 797,
-      "command.latency": 797,
+      "command.invoked": 796,
+      "command.latency": 796,
       "events.subscriptions.by_event": 9063,
       "events.subscriptions.snapshot": 1368,
-      "external.fetch": 6215,
+      "external.fetch": 6206,
       "scheduler.run": 1024,
       "leaderboard.refresh": 14,
       "rpg.fetch": 198,
-      "notifyme.trigger": 1135,
+      "notifyme.trigger": 1136,
       "rarity.refresh": 13,
       "welcome.dm": 8,
       "events.announcements.forward": 6,
@@ -47,7 +47,7 @@
     "top_commands_24h": [
       {
         "cmd": "!ft",
-        "count": 21
+        "count": 18
       },
       {
         "cmd": "!rarity",
@@ -70,14 +70,14 @@
       {
         "metric": "dm.fail",
         "tags": {
-          "feature": "threadwatch"
+          "feature": "notifyme"
         },
-        "count": 3
+        "count": 2
       },
       {
         "metric": "dm.fail",
         "tags": {
-          "feature": "notifyme"
+          "feature": "threadwatch"
         },
         "count": 2
       }
@@ -7287,7 +7287,7 @@
       },
       {
         "ts": "2026-02-20T04:00:00.000Z",
-        "count": 3,
+        "count": 36,
         "tags": {
           "source": "threadwatch",
           "status": "ok"
@@ -97961,6 +97961,13 @@
         "tags": {
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-02-20T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "status": "ok"
+        }
       }
     ],
     "notifyme.set": [
@@ -102020,6 +102027,22 @@
         "count": 5,
         "tags": {
           "name": "threadwatch",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-20T04:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "name": "threadwatch",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "radio_tower_event",
           "status": "ok"
         }
       }
@@ -185314,6 +185337,83 @@
         "tags": {
           "event_id": "winter_golden_day"
         }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "deerling"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "halloween"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "valentines"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "weekly_promo"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "easter"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "team_rocket"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "august_golden_day"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "cherubi"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "scatterbug"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "event_id": "discord_announcements"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "winter_golden_day"
+        }
       }
     ],
     "events.subscriptions.snapshot": [
@@ -200348,6 +200448,20 @@
       },
       {
         "ts": "2026-02-20T04:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-20T05:00:00.000Z",
         "count": 2,
         "tags": {
           "type": "users_with_all"
