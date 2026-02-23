@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-02-23T12:00:03.119Z",
+    "generated_at": "2026-02-23T13:00:01.199Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-11-25T12:00:03.119Z",
-      "end": "2026-02-23T12:00:03.119Z"
+      "start": "2025-11-25T13:00:01.199Z",
+      "end": "2026-02-23T13:00:01.199Z"
     }
   },
   "overview": {
@@ -13,29 +13,29 @@
       "command.invoked": 31,
       "command.latency": 31,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 8,
+      "external.fetch": 9,
       "notifyme.list": 1,
       "notifyme.set": 1,
       "notifyme.trigger": 2,
       "notifyme.unset": 1,
       "promo.refresh": 2,
-      "rarity.refresh": 4,
+      "rarity.refresh": 5,
       "rpg.fetch": 4,
-      "scheduler.run": 6
+      "scheduler.run": 7
     },
     "last_7d": {
       "command.invoked": 31,
       "command.latency": 31,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 8,
+      "external.fetch": 9,
       "notifyme.list": 1,
       "notifyme.set": 1,
       "notifyme.trigger": 2,
       "notifyme.unset": 1,
       "promo.refresh": 2,
-      "rarity.refresh": 4,
+      "rarity.refresh": 5,
       "rpg.fetch": 4,
-      "scheduler.run": 6
+      "scheduler.run": 7
     },
     "top_commands_24h": [
       {
@@ -208,6 +208,20 @@
         "tags": {
           "type": "users_with_all"
         }
+      },
+      {
+        "ts": "2026-02-23T12:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-23T12:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
       }
     ],
     "external.fetch": [
@@ -232,6 +246,14 @@
         "count": 2,
         "tags": {
           "source": "rarity4",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-23T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rarity",
           "status": "ok"
         }
       }
@@ -298,6 +320,14 @@
           "kind": "main",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-02-23T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
       }
     ],
     "rpg.fetch": [
@@ -340,6 +370,14 @@
         "count": 2,
         "tags": {
           "name": "radio_tower_event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-23T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "RARITY",
           "status": "ok"
         }
       }
