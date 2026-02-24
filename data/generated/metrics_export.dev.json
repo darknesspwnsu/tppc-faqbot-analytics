@@ -1,32 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-02-24T08:59:58.066Z",
+    "generated_at": "2026-02-24T09:59:57.808Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-11-26T08:59:58.066Z",
-      "end": "2026-02-24T08:59:58.066Z"
+      "start": "2025-11-26T09:59:57.808Z",
+      "end": "2026-02-24T09:59:57.808Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 31,
-      "command.latency": 31,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 18,
-      "notifyme.list": 1,
-      "notifyme.set": 1,
-      "notifyme.trigger": 2,
-      "notifyme.unset": 1,
-      "promo.refresh": 2,
-      "rarity.refresh": 5,
-      "rpg.fetch": 13,
-      "scheduler.run": 9,
-      "leaderboard.refresh": 2
+      "external.fetch": 10,
+      "rarity.refresh": 1,
+      "scheduler.run": 3,
+      "leaderboard.refresh": 2,
+      "rpg.fetch": 9,
+      "command.invoked": 1,
+      "command.latency": 1
     },
     "last_7d": {
-      "command.invoked": 31,
-      "command.latency": 31,
+      "command.invoked": 32,
+      "command.latency": 32,
       "events.subscriptions.snapshot": 0,
       "external.fetch": 18,
       "notifyme.list": 1,
@@ -41,16 +36,8 @@
     },
     "top_commands_24h": [
       {
-        "cmd": "!marketpoll",
-        "count": 21
-      },
-      {
-        "cmd": "notifyme",
-        "count": 5
-      },
-      {
         "cmd": "!dexroll",
-        "count": 5
+        "count": 1
       }
     ],
     "top_errors_24h": []
@@ -87,6 +74,15 @@
       {
         "ts": "2026-02-23T09:00:00.000Z",
         "count": 5,
+        "tags": {
+          "cmd": "!dexroll",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-02-24T09:00:00.000Z",
+        "count": 1,
         "tags": {
           "cmd": "!dexroll",
           "status": "ok",
@@ -163,6 +159,15 @@
         "count": 2,
         "tags": {
           "bucket": "lt250",
+          "cmd": "!dexroll",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-02-24T09:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
           "cmd": "!dexroll",
           "type": "bang"
         }
@@ -500,6 +505,20 @@
       },
       {
         "ts": "2026-02-24T08:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-24T09:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-24T09:00:00.000Z",
         "count": 0,
         "tags": {
           "type": "users_with_all"
