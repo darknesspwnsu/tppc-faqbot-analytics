@@ -1,46 +1,56 @@
 {
   "meta": {
-    "generated_at": "2026-02-25T08:59:54.212Z",
+    "generated_at": "2026-02-25T22:59:52.461Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-11-27T08:59:54.212Z",
-      "end": "2026-02-25T08:59:54.212Z"
+      "start": "2025-11-27T22:59:52.461Z",
+      "end": "2026-02-25T22:59:52.461Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 1,
-      "command.latency": 1,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 7,
-      "rarity.refresh": 2,
-      "scheduler.run": 4,
+      "scheduler.run": 3,
+      "external.fetch": 6,
       "leaderboard.refresh": 1,
-      "rpg.fetch": 5
+      "rpg.fetch": 5,
+      "rarity.refresh": 1
     },
     "last_7d": {
       "command.invoked": 32,
       "command.latency": 32,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 25,
+      "external.fetch": 26,
       "notifyme.list": 1,
       "notifyme.set": 1,
       "notifyme.trigger": 2,
       "notifyme.unset": 1,
       "promo.refresh": 2,
-      "rarity.refresh": 7,
+      "rarity.refresh": 8,
       "rpg.fetch": 18,
-      "scheduler.run": 13,
+      "scheduler.run": 14,
       "leaderboard.refresh": 3
     },
-    "top_commands_24h": [
+    "top_commands_24h": [],
+    "top_errors_24h": [
       {
-        "cmd": "!dexroll",
+        "metric": "external.fetch",
+        "tags": {
+          "source": "rarity",
+          "status": "error"
+        },
+        "count": 1
+      },
+      {
+        "metric": "rarity.refresh",
+        "tags": {
+          "kind": "main",
+          "status": "error"
+        },
         "count": 1
       }
-    ],
-    "top_errors_24h": []
+    ]
   },
   "timeseries": {
     "command.invoked": [
@@ -845,6 +855,202 @@
         "tags": {
           "type": "users_with_all"
         }
+      },
+      {
+        "ts": "2026-02-25T09:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T09:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T10:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T10:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T11:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T11:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T12:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T12:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T13:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T13:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T14:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T14:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T15:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T15:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T16:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T16:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T17:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T17:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T18:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T18:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T19:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T19:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T20:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T20:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T21:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T21:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-25T22:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T22:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
       }
     ],
     "external.fetch": [
@@ -910,6 +1116,14 @@
         "tags": {
           "source": "rpg",
           "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-25T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rarity",
+          "status": "error"
         }
       }
     ],
@@ -990,6 +1204,14 @@
         "tags": {
           "kind": "main",
           "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-25T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "main",
+          "status": "error"
         }
       }
     ],
@@ -1129,6 +1351,14 @@
         "count": 1,
         "tags": {
           "name": "radio_tower_event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-25T12:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "RARITY",
           "status": "ok"
         }
       }
