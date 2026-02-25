@@ -1,38 +1,38 @@
 {
   "meta": {
-    "generated_at": "2026-02-25T04:59:54.820Z",
+    "generated_at": "2026-02-25T05:59:54.669Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-11-27T04:59:54.820Z",
-      "end": "2026-02-25T04:59:54.820Z"
+      "start": "2025-11-27T05:59:54.669Z",
+      "end": "2026-02-25T05:59:54.669Z"
     }
   },
   "overview": {
     "last_24h": {
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 7,
-      "leaderboard.refresh": 1,
-      "rpg.fetch": 5,
-      "scheduler.run": 3,
       "command.invoked": 1,
       "command.latency": 1,
-      "rarity.refresh": 2
+      "external.fetch": 7,
+      "rarity.refresh": 2,
+      "scheduler.run": 4,
+      "leaderboard.refresh": 1,
+      "rpg.fetch": 5
     },
     "last_7d": {
       "command.invoked": 32,
       "command.latency": 32,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 20,
+      "external.fetch": 25,
       "notifyme.list": 1,
       "notifyme.set": 1,
       "notifyme.trigger": 2,
       "notifyme.unset": 1,
       "promo.refresh": 2,
       "rarity.refresh": 7,
-      "rpg.fetch": 13,
-      "scheduler.run": 11,
-      "leaderboard.refresh": 2
+      "rpg.fetch": 18,
+      "scheduler.run": 13,
+      "leaderboard.refresh": 3
     },
     "top_commands_24h": [
       {
@@ -789,6 +789,20 @@
         "tags": {
           "type": "users_with_all"
         }
+      },
+      {
+        "ts": "2026-02-25T05:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-25T05:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
       }
     ],
     "external.fetch": [
@@ -845,6 +859,14 @@
         "count": 2,
         "tags": {
           "source": "rarity",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-25T05:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "source": "rpg",
           "status": "ok"
         }
       }
@@ -977,6 +999,22 @@
           "method": "GET",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-02-25T05:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-25T05:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
       }
     ],
     "scheduler.run": [
@@ -1035,6 +1073,22 @@
           "name": "RARITY",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-02-25T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "radio_tower_event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-25T05:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "radio_tower_event",
+          "status": "ok"
+        }
       }
     ],
     "leaderboard.refresh": [
@@ -1048,6 +1102,14 @@
       },
       {
         "ts": "2026-02-24T05:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-25T05:00:00.000Z",
         "count": 1,
         "tags": {
           "kind": "training",
