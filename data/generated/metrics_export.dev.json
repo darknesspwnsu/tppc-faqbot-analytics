@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-02-27T12:00:00.962Z",
+    "generated_at": "2026-02-27T13:00:00.816Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-11-29T12:00:00.962Z",
-      "end": "2026-02-27T12:00:00.962Z"
+      "start": "2025-11-29T13:00:00.816Z",
+      "end": "2026-02-27T13:00:00.816Z"
     }
   },
   "overview": {
@@ -14,26 +14,26 @@
       "command.invoked": 4,
       "command.latency": 4,
       "notifyme.list": 2,
-      "scheduler.run": 5,
-      "external.fetch": 9,
+      "scheduler.run": 7,
+      "external.fetch": 11,
       "leaderboard.refresh": 1,
       "rpg.fetch": 7,
       "promo.refresh": 1,
-      "rarity.refresh": 2
+      "rarity.refresh": 4
     },
     "last_7d": {
       "command.invoked": 36,
       "command.latency": 36,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 42,
+      "external.fetch": 44,
       "notifyme.list": 3,
       "notifyme.set": 1,
       "notifyme.trigger": 2,
       "notifyme.unset": 1,
       "promo.refresh": 3,
-      "rarity.refresh": 12,
+      "rarity.refresh": 14,
       "rpg.fetch": 30,
-      "scheduler.run": 23,
+      "scheduler.run": 25,
       "leaderboard.refresh": 5
     },
     "top_commands_24h": [
@@ -1609,6 +1609,20 @@
         "tags": {
           "type": "users_with_all"
         }
+      },
+      {
+        "ts": "2026-02-27T12:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-27T12:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
       }
     ],
     "external.fetch": [
@@ -1729,6 +1743,14 @@
         "count": 1,
         "tags": {
           "source": "rarity4",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-27T12:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "source": "rarity",
           "status": "ok"
         }
       }
@@ -1854,6 +1876,14 @@
       {
         "ts": "2026-02-27T06:00:00.000Z",
         "count": 1,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-27T12:00:00.000Z",
+        "count": 2,
         "tags": {
           "kind": "main",
           "status": "ok"
@@ -2116,6 +2146,14 @@
         "count": 1,
         "tags": {
           "name": "radio_tower_event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-27T12:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "name": "RARITY",
           "status": "ok"
         }
       }
