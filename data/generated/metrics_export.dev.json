@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-02-26T23:59:48.270Z",
+    "generated_at": "2026-02-27T00:59:48.167Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-11-28T23:59:48.270Z",
-      "end": "2026-02-26T23:59:48.270Z"
+      "start": "2025-11-29T00:59:48.167Z",
+      "end": "2026-02-27T00:59:48.167Z"
     }
   },
   "overview": {
@@ -16,15 +16,16 @@
       "leaderboard.refresh": 1,
       "rpg.fetch": 5,
       "rarity.refresh": 2,
-      "command.invoked": 1,
-      "command.latency": 1
+      "command.invoked": 3,
+      "command.latency": 3,
+      "notifyme.list": 2
     },
     "last_7d": {
-      "command.invoked": 33,
-      "command.latency": 33,
+      "command.invoked": 35,
+      "command.latency": 35,
       "events.subscriptions.snapshot": 0,
       "external.fetch": 33,
-      "notifyme.list": 1,
+      "notifyme.list": 3,
       "notifyme.set": 1,
       "notifyme.trigger": 2,
       "notifyme.unset": 1,
@@ -35,6 +36,10 @@
       "leaderboard.refresh": 4
     },
     "top_commands_24h": [
+      {
+        "cmd": "notifyme",
+        "count": 2
+      },
       {
         "cmd": "!rc",
         "count": 1
@@ -96,6 +101,15 @@
           "cmd": "!rc",
           "status": "ok",
           "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-02-27T00:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "notifyme",
+          "status": "ok",
+          "type": "slash"
         }
       }
     ],
@@ -188,6 +202,15 @@
           "bucket": "lt1000",
           "cmd": "!rc",
           "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-02-27T00:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "notifyme",
+          "type": "slash"
         }
       }
     ],
@@ -1395,6 +1418,20 @@
         "tags": {
           "type": "users_with_all"
         }
+      },
+      {
+        "ts": "2026-02-27T00:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-27T00:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
       }
     ],
     "external.fetch": [
@@ -1491,6 +1528,13 @@
       {
         "ts": "2026-02-23T09:00:00.000Z",
         "count": 1,
+        "tags": {
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-27T00:00:00.000Z",
+        "count": 2,
         "tags": {
           "status": "ok"
         }
