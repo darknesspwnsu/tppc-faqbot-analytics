@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-02-27T08:00:01.752Z",
+    "generated_at": "2026-02-27T09:00:01.491Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-11-29T08:00:01.752Z",
-      "end": "2026-02-27T08:00:01.752Z"
+      "start": "2025-11-29T09:00:01.491Z",
+      "end": "2026-02-27T09:00:01.491Z"
     }
   },
   "overview": {
@@ -14,16 +14,16 @@
       "external.fetch": 11,
       "rarity.refresh": 4,
       "scheduler.run": 7,
-      "command.invoked": 3,
-      "command.latency": 3,
+      "command.invoked": 4,
+      "command.latency": 4,
       "notifyme.list": 2,
       "leaderboard.refresh": 1,
       "rpg.fetch": 7,
       "promo.refresh": 1
     },
     "last_7d": {
-      "command.invoked": 35,
-      "command.latency": 35,
+      "command.invoked": 36,
+      "command.latency": 36,
       "events.subscriptions.snapshot": 0,
       "external.fetch": 42,
       "notifyme.list": 3,
@@ -43,6 +43,10 @@
       },
       {
         "cmd": "!rc",
+        "count": 1
+      },
+      {
+        "cmd": "!wiki",
         "count": 1
       }
     ],
@@ -111,6 +115,15 @@
           "cmd": "notifyme",
           "status": "ok",
           "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-02-27T08:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!wiki",
+          "status": "ok",
+          "type": "bang"
         }
       }
     ],
@@ -212,6 +225,15 @@
           "bucket": "lt500",
           "cmd": "notifyme",
           "type": "slash"
+        }
+      },
+      {
+        "ts": "2026-02-27T08:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!wiki",
+          "type": "bang"
         }
       }
     ],
@@ -1527,6 +1549,20 @@
       },
       {
         "ts": "2026-02-27T07:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-27T08:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-27T08:00:00.000Z",
         "count": 0,
         "tags": {
           "type": "users_with_all"
