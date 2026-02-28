@@ -1,39 +1,39 @@
 {
   "meta": {
-    "generated_at": "2026-02-28T04:59:58.271Z",
+    "generated_at": "2026-02-28T05:59:58.063Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-11-30T04:59:58.271Z",
-      "end": "2026-02-28T04:59:58.271Z"
+      "start": "2025-11-30T05:59:58.063Z",
+      "end": "2026-02-28T05:59:58.063Z"
     }
   },
   "overview": {
     "last_24h": {
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 20,
-      "leaderboard.refresh": 2,
-      "rpg.fetch": 16,
-      "scheduler.run": 8,
-      "promo.refresh": 2,
+      "external.fetch": 24,
+      "promo.refresh": 3,
       "rarity.refresh": 4,
+      "rpg.fetch": 20,
+      "scheduler.run": 9,
       "command.invoked": 6,
-      "command.latency": 6
+      "command.latency": 6,
+      "leaderboard.refresh": 2
     },
     "last_7d": {
       "command.invoked": 41,
       "command.latency": 41,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 53,
+      "external.fetch": 62,
       "notifyme.list": 3,
       "notifyme.set": 1,
       "notifyme.trigger": 2,
       "notifyme.unset": 1,
-      "promo.refresh": 4,
+      "promo.refresh": 5,
       "rarity.refresh": 14,
-      "rpg.fetch": 39,
-      "scheduler.run": 27,
-      "leaderboard.refresh": 6
+      "rpg.fetch": 48,
+      "scheduler.run": 29,
+      "leaderboard.refresh": 7
     },
     "top_commands_24h": [
       {
@@ -1869,6 +1869,20 @@
         "tags": {
           "type": "users_with_all"
         }
+      },
+      {
+        "ts": "2026-02-28T05:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-28T05:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
       }
     ],
     "external.fetch": [
@@ -2023,6 +2037,14 @@
           "source": "rpg",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-02-28T05:00:00.000Z",
+        "count": 9,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
       }
     ],
     "notifyme.list": [
@@ -2087,6 +2109,14 @@
       },
       {
         "ts": "2026-02-28T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-28T05:00:00.000Z",
         "count": 1,
         "tags": {
           "reason": "scheduled",
@@ -2328,6 +2358,22 @@
           "method": "GET",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-02-28T05:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-28T05:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
       }
     ],
     "scheduler.run": [
@@ -2498,6 +2544,22 @@
           "name": "radio_tower_event",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-02-28T05:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "rpg_events",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-28T05:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "radio_tower_event",
+          "status": "ok"
+        }
       }
     ],
     "leaderboard.refresh": [
@@ -2543,6 +2605,14 @@
       },
       {
         "ts": "2026-02-27T14:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-02-28T05:00:00.000Z",
         "count": 1,
         "tags": {
           "kind": "training",
