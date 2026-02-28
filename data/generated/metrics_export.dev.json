@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generated_at": "2026-02-28T17:59:56.098Z",
+    "generated_at": "2026-02-28T18:59:55.953Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-11-30T17:59:56.098Z",
-      "end": "2026-02-28T17:59:56.098Z"
+      "start": "2025-11-30T18:59:55.953Z",
+      "end": "2026-02-28T18:59:55.953Z"
     }
   },
   "overview": {
     "last_24h": {
       "events.subscriptions.snapshot": 0,
-      "command.invoked": 5,
-      "command.latency": 5,
+      "command.invoked": 7,
+      "command.latency": 7,
       "external.fetch": 18,
       "rpg.fetch": 16,
       "promo.refresh": 2,
@@ -21,8 +21,8 @@
       "rarity.refresh": 2
     },
     "last_7d": {
-      "command.invoked": 41,
-      "command.latency": 41,
+      "command.invoked": 43,
+      "command.latency": 43,
       "events.subscriptions.snapshot": 0,
       "external.fetch": 64,
       "notifyme.list": 3,
@@ -39,6 +39,14 @@
       {
         "cmd": "!sprite",
         "count": 5
+      },
+      {
+        "cmd": "?rarity",
+        "count": 1
+      },
+      {
+        "cmd": "!rc",
+        "count": 1
       }
     ],
     "top_errors_24h": []
@@ -122,6 +130,24 @@
         "count": 5,
         "tags": {
           "cmd": "!sprite",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-02-28T18:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "?rarity",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-02-28T18:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!rc",
           "status": "ok",
           "type": "bang"
         }
@@ -251,6 +277,24 @@
         "tags": {
           "bucket": "lt3000",
           "cmd": "!sprite",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-02-28T18:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!rc",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-02-28T18:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "?rarity",
           "type": "bang"
         }
       }
@@ -2043,6 +2087,20 @@
       },
       {
         "ts": "2026-02-28T17:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-02-28T18:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-02-28T18:00:00.000Z",
         "count": 0,
         "tags": {
           "type": "users_with_all"
