@@ -1,38 +1,38 @@
 {
   "meta": {
-    "generated_at": "2026-03-27T09:00:01.594Z",
+    "generated_at": "2026-03-27T10:00:01.504Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2025-12-27T09:00:01.594Z",
-      "end": "2026-03-27T09:00:01.594Z"
+      "start": "2025-12-27T10:00:01.504Z",
+      "end": "2026-03-27T10:00:01.504Z"
     }
   },
   "overview": {
     "last_24h": {
+      "command.invoked": 114,
+      "command.latency": 114,
       "events.subscriptions.snapshot": 0,
       "external.fetch": 72,
       "promo.refresh": 12,
       "rarity.refresh": 24,
       "rpg.fetch": 48,
-      "scheduler.run": 36,
-      "command.invoked": 97,
-      "command.latency": 97
+      "scheduler.run": 36
     },
     "last_7d": {
-      "command.invoked": 111,
-      "command.latency": 111,
+      "command.invoked": 128,
+      "command.latency": 128,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 99,
-      "promo.refresh": 16,
-      "rarity.refresh": 32,
-      "rpg.fetch": 64,
-      "scheduler.run": 48
+      "external.fetch": 105,
+      "promo.refresh": 17,
+      "rarity.refresh": 34,
+      "rpg.fetch": 68,
+      "scheduler.run": 51
     },
     "top_commands_24h": [
       {
         "cmd": "!faq",
-        "count": 96
+        "count": 113
       }
     ],
     "top_errors_24h": [
@@ -42,7 +42,7 @@
           "source": "rarity",
           "status": "error"
         },
-        "count": 7
+        "count": 8
       },
       {
         "metric": "external.fetch",
@@ -50,7 +50,7 @@
           "source": "rarity4",
           "status": "error"
         },
-        "count": 7
+        "count": 8
       },
       {
         "metric": "rarity.refresh",
@@ -58,7 +58,7 @@
           "kind": "l4",
           "status": "error"
         },
-        "count": 7
+        "count": 8
       },
       {
         "metric": "rarity.refresh",
@@ -66,7 +66,7 @@
           "kind": "main",
           "status": "error"
         },
-        "count": 7
+        "count": 8
       },
       {
         "metric": "command.invoked",
@@ -273,6 +273,15 @@
       {
         "ts": "2026-03-27T08:00:00.000Z",
         "count": 59,
+        "tags": {
+          "cmd": "!faq",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 17,
         "tags": {
           "cmd": "!faq",
           "status": "ok",
@@ -698,6 +707,42 @@
       {
         "ts": "2026-03-27T08:00:00.000Z",
         "count": 8,
+        "tags": {
+          "bucket": "lt250",
+          "cmd": "!faq",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!faq",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!faq",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "bucket": "lt100",
+          "cmd": "!faq",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 6,
         "tags": {
           "bucket": "lt250",
           "cmd": "!faq",
@@ -2679,6 +2724,20 @@
         "tags": {
           "type": "users_with_all"
         }
+      },
+      {
+        "ts": "2026-03-27T10:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-03-27T10:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
       }
     ],
     "external.fetch": [
@@ -3049,6 +3108,30 @@
           "source": "rarity4",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rarity",
+          "status": "error"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "source": "rarity4",
+          "status": "error"
+        }
       }
     ],
     "notifyme.list": [
@@ -3178,6 +3261,14 @@
       {
         "ts": "2026-03-27T08:00:00.000Z",
         "count": 4,
+        "tags": {
+          "reason": "startup",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 1,
         "tags": {
           "reason": "startup",
           "status": "ok"
@@ -3391,6 +3482,22 @@
         "tags": {
           "kind": "main",
           "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "l4",
+          "status": "error"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "main",
+          "status": "error"
         }
       }
     ],
@@ -3694,6 +3801,22 @@
       {
         "ts": "2026-03-27T08:00:00.000Z",
         "count": 8,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 2,
         "tags": {
           "method": "GET",
           "status": "ok"
@@ -4056,6 +4179,30 @@
       {
         "ts": "2026-03-27T08:00:00.000Z",
         "count": 4,
+        "tags": {
+          "name": "radio_tower_event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "rpg_events",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "name": "special_days",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-03-27T09:00:00.000Z",
+        "count": 1,
         "tags": {
           "name": "radio_tower_event",
           "status": "ok"
