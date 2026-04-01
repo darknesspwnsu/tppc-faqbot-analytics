@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-04-01T12:00:00.862Z",
+    "generated_at": "2026-04-01T13:00:01.083Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2026-01-01T12:00:00.862Z",
-      "end": "2026-04-01T12:00:00.862Z"
+      "start": "2026-01-01T13:00:01.083Z",
+      "end": "2026-04-01T13:00:01.083Z"
     }
   },
   "overview": {
@@ -13,21 +13,21 @@
       "command.invoked": 11,
       "command.latency": 11,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 53,
+      "external.fetch": 86565,
       "promo.refresh": 8,
-      "rarity.refresh": 21,
+      "rarity.refresh": 86533,
       "rpg.fetch": 32,
-      "scheduler.run": 24
+      "scheduler.run": 86536
     },
     "last_7d": {
       "command.invoked": 155,
       "command.latency": 155,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 143,
+      "external.fetch": 86655,
       "promo.refresh": 23,
-      "rarity.refresh": 51,
+      "rarity.refresh": 86563,
       "rpg.fetch": 92,
-      "scheduler.run": 69
+      "scheduler.run": 86581
     },
     "top_commands_24h": [
       {
@@ -2997,6 +2997,20 @@
         "tags": {
           "type": "users_with_all"
         }
+      },
+      {
+        "ts": "2026-04-01T13:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-04-01T13:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
       }
     ],
     "external.fetch": [
@@ -3463,6 +3477,22 @@
           "source": "rarity",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-04-01T12:00:00.000Z",
+        "count": 86487,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-04-01T13:00:00.000Z",
+        "count": 25,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
       }
     ],
     "notifyme.list": [
@@ -3898,6 +3928,22 @@
       {
         "ts": "2026-04-01T11:00:00.000Z",
         "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-04-01T12:00:00.000Z",
+        "count": 86487,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-04-01T13:00:00.000Z",
+        "count": 25,
         "tags": {
           "kind": "main",
           "status": "ok"
@@ -4688,6 +4734,22 @@
         "count": 8,
         "tags": {
           "name": "radio_tower_event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-04-01T12:00:00.000Z",
+        "count": 86487,
+        "tags": {
+          "name": "RARITY",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-04-01T13:00:00.000Z",
+        "count": 25,
+        "tags": {
+          "name": "RARITY",
           "status": "ok"
         }
       }
