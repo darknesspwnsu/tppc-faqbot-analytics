@@ -1,17 +1,17 @@
 {
   "meta": {
-    "generated_at": "2026-04-01T14:00:00.886Z",
+    "generated_at": "2026-04-01T15:00:01.567Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2026-01-01T14:00:00.886Z",
-      "end": "2026-04-01T14:00:00.886Z"
+      "start": "2026-01-01T15:00:01.567Z",
+      "end": "2026-04-01T15:00:01.567Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 11,
-      "command.latency": 11,
+      "command.invoked": 12,
+      "command.latency": 12,
       "events.subscriptions.snapshot": 0,
       "external.fetch": 99865,
       "promo.refresh": 8,
@@ -21,8 +21,8 @@
       "leaderboard.refresh": 1
     },
     "last_7d": {
-      "command.invoked": 155,
-      "command.latency": 155,
+      "command.invoked": 156,
+      "command.latency": 156,
       "events.subscriptions.snapshot": 0,
       "external.fetch": 99955,
       "promo.refresh": 23,
@@ -47,6 +47,10 @@
       {
         "cmd": "!coinflip",
         "count": 2
+      },
+      {
+        "cmd": "!choose",
+        "count": 1
       }
     ],
     "top_errors_24h": [
@@ -334,6 +338,15 @@
         "count": 3,
         "tags": {
           "cmd": "!dexroll",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-04-01T14:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!choose",
           "status": "ok",
           "type": "bang"
         }
@@ -895,6 +908,15 @@
         "tags": {
           "bucket": "lt250",
           "cmd": "!coinflip",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-04-01T14:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!choose",
           "type": "bang"
         }
       }
@@ -3023,6 +3045,20 @@
       },
       {
         "ts": "2026-04-01T14:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-04-01T15:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-04-01T15:00:00.000Z",
         "count": 0,
         "tags": {
           "type": "users_with_all"
