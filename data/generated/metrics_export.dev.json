@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-04-01T11:00:00.884Z",
+    "generated_at": "2026-04-01T12:00:00.862Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2026-01-01T11:00:00.884Z",
-      "end": "2026-04-01T11:00:00.884Z"
+      "start": "2026-01-01T12:00:00.862Z",
+      "end": "2026-04-01T12:00:00.862Z"
     }
   },
   "overview": {
@@ -13,9 +13,9 @@
       "command.invoked": 11,
       "command.latency": 11,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 48,
+      "external.fetch": 53,
       "promo.refresh": 8,
-      "rarity.refresh": 16,
+      "rarity.refresh": 21,
       "rpg.fetch": 32,
       "scheduler.run": 24
     },
@@ -23,9 +23,9 @@
       "command.invoked": 155,
       "command.latency": 155,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 138,
+      "external.fetch": 143,
       "promo.refresh": 23,
-      "rarity.refresh": 46,
+      "rarity.refresh": 51,
       "rpg.fetch": 92,
       "scheduler.run": 69
     },
@@ -2983,6 +2983,20 @@
         "tags": {
           "type": "users_with_all"
         }
+      },
+      {
+        "ts": "2026-04-01T12:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-04-01T12:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
       }
     ],
     "external.fetch": [
@@ -3441,6 +3455,14 @@
           "source": "rarity4",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-04-01T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
       }
     ],
     "notifyme.list": [
@@ -3868,6 +3890,14 @@
       {
         "ts": "2026-04-01T04:00:00.000Z",
         "count": 2,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-04-01T11:00:00.000Z",
+        "count": 5,
         "tags": {
           "kind": "main",
           "status": "ok"
