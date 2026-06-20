@@ -1,184 +1,81 @@
 {
   "meta": {
-    "generated_at": "2026-04-03T00:00:25.150Z",
+    "generated_at": "2026-06-20T07:00:38.908Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2026-01-03T00:00:25.150Z",
-      "end": "2026-04-03T00:00:25.150Z"
+      "start": "2026-03-22T07:00:38.908Z",
+      "end": "2026-06-20T07:00:38.908Z"
     }
   },
   "overview": {
     "last_24h": {
+      "command.invoked": 2,
+      "command.latency": 2,
       "events.subscriptions.snapshot": 0,
-      "command.invoked": 9,
-      "command.latency": 9,
-      "external.fetch": 108716,
-      "rarity.refresh": 108707,
-      "rpg.fetch": 9,
-      "scheduler.run": 108704,
-      "leaderboard.refresh": 1
+      "external.fetch": 14,
+      "promo.refresh": 2,
+      "rarity.refresh": 6,
+      "rpg.fetch": 8,
+      "scheduler.run": 6
     },
     "last_7d": {
-      "command.invoked": 155,
-      "command.latency": 155,
+      "command.invoked": 2,
+      "command.latency": 2,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 208659,
-      "promo.refresh": 21,
-      "rarity.refresh": 208562,
-      "rpg.fetch": 97,
-      "scheduler.run": 208575,
-      "leaderboard.refresh": 2
+      "external.fetch": 14,
+      "promo.refresh": 2,
+      "rarity.refresh": 6,
+      "rpg.fetch": 8,
+      "scheduler.run": 6
     },
     "top_commands_24h": [
       {
-        "cmd": "?ft",
-        "count": 8
+        "cmd": "!pokeword",
+        "count": 1
       },
       {
-        "cmd": "?l4",
+        "cmd": "!rarity",
         "count": 1
       }
     ],
-    "top_errors_24h": []
+    "top_errors_24h": [
+      {
+        "metric": "external.fetch",
+        "tags": {
+          "source": "rarity",
+          "status": "error"
+        },
+        "count": 2
+      },
+      {
+        "metric": "external.fetch",
+        "tags": {
+          "source": "rarity4",
+          "status": "error"
+        },
+        "count": 2
+      },
+      {
+        "metric": "rarity.refresh",
+        "tags": {
+          "kind": "l4",
+          "status": "error"
+        },
+        "count": 2
+      },
+      {
+        "metric": "rarity.refresh",
+        "tags": {
+          "kind": "main",
+          "status": "error"
+        },
+        "count": 2
+      }
+    ]
   },
   "timeseries": {
     "command.invoked": [
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "cmd": "notifyme",
-          "status": "ok",
-          "type": "autocomplete"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 3,
-        "tags": {
-          "cmd": "notifyme",
-          "status": "ok",
-          "type": "slash"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 21,
-        "tags": {
-          "cmd": "!marketpoll",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "cmd": "!dexroll",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-24T09:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "cmd": "!dexroll",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-26T18:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "cmd": "!rc",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-27T00:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "cmd": "notifyme",
-          "status": "ok",
-          "type": "slash"
-        }
-      },
-      {
-        "ts": "2026-02-27T08:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "cmd": "!wiki",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-28T02:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "cmd": "!sprite",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-28T18:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "cmd": "?rarity",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-28T18:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "cmd": "!rc",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-28T21:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "cmd": "!lb",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "cmd": "!info",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "cmd": "!organizer",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "cmd": "!calc",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
       {
         "ts": "2026-03-23T08:00:00.000Z",
         "count": 4,
@@ -322,207 +219,27 @@
           "status": "ok",
           "type": "bang"
         }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!pokeword",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!rarity",
+          "status": "ok",
+          "type": "bang"
+        }
       }
     ],
     "command.latency": [
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "bucket": "lt250",
-          "cmd": "notifyme",
-          "type": "autocomplete"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 7,
-        "tags": {
-          "bucket": "lt1000",
-          "cmd": "!marketpoll",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt1000",
-          "cmd": "notifyme",
-          "type": "slash"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "notifyme",
-          "type": "slash"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 14,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "!marketpoll",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt250",
-          "cmd": "notifyme",
-          "type": "slash"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 3,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "!dexroll",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "bucket": "lt250",
-          "cmd": "!dexroll",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-24T09:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "!dexroll",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-26T18:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt1000",
-          "cmd": "!rc",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-27T00:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "notifyme",
-          "type": "slash"
-        }
-      },
-      {
-        "ts": "2026-02-27T08:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt1000",
-          "cmd": "!wiki",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-28T02:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "bucket": "lt1000",
-          "cmd": "!sprite",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-28T02:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt3000",
-          "cmd": "!sprite",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-28T18:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "!rc",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-28T18:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt1000",
-          "cmd": "?rarity",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-02-28T21:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt3000",
-          "cmd": "!lb",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "!organizer",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "!info",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "!calc",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "bucket": "lt1000",
-          "cmd": "!info",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "bucket": "lt1000",
-          "cmd": "!calc",
-          "type": "bang"
-        }
-      },
       {
         "ts": "2026-03-23T08:00:00.000Z",
         "count": 2,
@@ -927,1886 +644,28 @@
           "cmd": "?ft",
           "type": "bang"
         }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!pokeword",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!rarity",
+          "type": "bang"
+        }
       }
     ],
     "events.subscriptions.snapshot": [
       {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T10:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T10:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T11:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T11:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T12:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T12:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T13:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T13:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T14:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T14:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T15:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T15:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T16:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T16:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T17:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T17:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T18:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T18:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T19:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T19:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T20:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T20:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T21:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T21:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T22:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T22:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-23T23:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-23T23:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T00:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T00:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T01:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T01:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T02:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T02:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T03:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T03:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T04:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T04:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T05:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T05:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T06:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T06:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T07:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T07:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T08:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T08:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T09:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T09:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T10:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T10:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T11:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T11:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T12:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T12:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T13:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T13:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T14:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T14:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T15:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T15:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T16:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T16:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T17:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T17:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T18:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T18:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T19:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T19:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T20:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T20:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T21:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T21:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T22:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T22:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-24T23:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-24T23:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T00:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T00:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T01:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T01:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T02:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T02:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T03:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T03:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T04:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T04:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T05:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T05:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T06:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T06:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T07:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T07:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T08:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T08:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T09:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T09:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T10:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T10:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T11:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T11:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T12:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T12:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T13:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T13:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T14:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T14:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T15:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T15:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T16:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T16:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T17:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T17:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T18:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T18:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T19:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T19:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T20:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T20:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T21:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T21:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T22:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T22:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-25T23:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-25T23:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T00:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T00:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T01:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T01:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T02:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T02:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T03:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T03:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T04:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T04:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T05:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T05:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T06:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T06:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T08:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T08:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T09:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T09:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T10:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T10:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T11:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T11:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T12:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T12:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T13:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T13:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T14:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T14:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T15:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T15:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T16:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T16:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T17:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T17:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T18:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T18:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T19:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T19:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T20:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T20:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T21:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T21:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T22:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T22:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-26T23:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-26T23:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T00:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T00:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T01:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T01:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T02:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T02:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T03:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T03:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T04:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T04:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T05:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T05:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T07:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T07:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T08:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T08:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T09:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T09:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T10:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T10:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T11:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T11:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T12:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T12:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T13:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T13:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T14:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T14:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T15:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T15:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T16:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T16:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T17:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T17:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T18:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T18:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T19:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T19:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T20:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T20:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T21:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T21:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T22:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T22:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-27T23:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-27T23:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T00:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T00:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T01:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T01:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T02:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T02:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T03:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T03:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T04:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T04:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T05:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T05:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T06:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T06:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T07:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T07:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T08:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T08:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T09:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T09:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T10:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T10:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T11:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T11:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T12:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T12:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T13:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T13:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T14:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T14:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T15:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T15:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T16:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T16:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T17:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T17:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T18:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T18:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T19:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T19:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T20:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T20:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T21:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T21:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-02-28T22:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-02-28T22:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 0,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
         "ts": "2026-03-23T08:00:00.000Z",
         "count": 0,
         "tags": {
@@ -3487,6 +1346,76 @@
       },
       {
         "ts": "2026-04-03T00:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-04-03T01:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-04-03T01:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-04-03T02:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-04-03T02:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-04-03T03:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-04-03T03:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-06-20T07:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-06-20T07:00:00.000Z",
         "count": 0,
         "tags": {
           "type": "users_with_all"
@@ -3494,206 +1423,6 @@
       }
     ],
     "external.fetch": [
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rarity",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rarity4",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-23T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "source": "rarity",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-23T14:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-24T05:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-24T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rarity",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-25T05:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-25T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "source": "rarity",
-          "status": "error"
-        }
-      },
-      {
-        "ts": "2026-02-26T05:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-26T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rarity",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T05:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "source": "rarity",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "source": "rarity4",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rarity",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T14:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T02:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T04:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T05:00:00.000Z",
-        "count": 9,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rarity",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T21:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 3,
-        "tags": {
-          "source": "rarity",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 12,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 3,
-        "tags": {
-          "source": "rarity4",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-03-23T08:00:00.000Z",
         "count": 3,
@@ -4037,92 +1766,49 @@
           "source": "rpg",
           "status": "ok"
         }
-      }
-    ],
-    "notifyme.list": [
+      },
       {
-        "ts": "2026-02-23T09:00:00.000Z",
+        "ts": "2026-06-20T06:00:00.000Z",
         "count": 1,
         "tags": {
+          "source": "rarity",
           "status": "ok"
         }
       },
       {
-        "ts": "2026-02-27T00:00:00.000Z",
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 8,
+        "tags": {
+          "source": "rpg",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
         "count": 2,
         "tags": {
-          "status": "ok"
+          "source": "rarity",
+          "status": "error"
         }
-      }
-    ],
-    "notifyme.set": [
+      },
       {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "status": "ok"
-        }
-      }
-    ],
-    "notifyme.trigger": [
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
+        "ts": "2026-06-20T06:00:00.000Z",
         "count": 2,
         "tags": {
-          "status": "ok"
+          "source": "rarity4",
+          "status": "error"
         }
-      }
-    ],
-    "notifyme.unset": [
+      },
       {
-        "ts": "2026-02-23T09:00:00.000Z",
+        "ts": "2026-06-20T06:00:00.000Z",
         "count": 1,
         "tags": {
+          "source": "rarity4",
           "status": "ok"
         }
       }
     ],
     "promo.refresh": [
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "reason": "startup",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "startup",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 3,
-        "tags": {
-          "reason": "startup",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-03-23T08:00:00.000Z",
         "count": 3,
@@ -4194,105 +1880,17 @@
           "reason": "startup",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "reason": "startup",
+          "status": "ok"
+        }
       }
     ],
     "rarity.refresh": [
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "kind": "l4",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-23T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-24T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-25T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "main",
-          "status": "error"
-        }
-      },
-      {
-        "ts": "2026-02-26T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "l4",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 3,
-        "tags": {
-          "kind": "l4",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 3,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-03-23T08:00:00.000Z",
         "count": 3,
@@ -4524,217 +2122,41 @@
           "kind": "main",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "kind": "l4",
+          "status": "error"
+        }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "kind": "main",
+          "status": "error"
+        }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "l4",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
       }
     ],
     "rpg.fetch": [
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-23T14:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-23T14:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-24T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-24T05:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-25T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-25T05:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-26T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-26T05:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T05:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T14:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T14:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T02:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T02:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T05:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T05:00:00.000Z",
-        "count": 7,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T21:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T21:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-03-23T08:00:00.000Z",
         "count": 6,
@@ -4934,225 +2356,25 @@
           "method": "GET",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "method": "POST",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "method": "GET",
+          "status": "ok"
+        }
       }
     ],
     "scheduler.run": [
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "name": "rpg_events",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "name": "special_days",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-23T09:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-23T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "RARITY",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-24T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-24T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-24T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "name": "RARITY",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-25T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-25T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-25T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "RARITY",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-26T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-26T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-26T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "name": "RARITY",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "rpg_events",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "special_days",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T06:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "name": "RARITY",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "rpg_events",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "rpg_events",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "name": "RARITY",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 3,
-        "tags": {
-          "name": "rpg_events",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 3,
-        "tags": {
-          "name": "special_days",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-03-17T07:00:00.000Z",
-        "count": 3,
-        "tags": {
-          "name": "radio_tower_event",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-03-23T08:00:00.000Z",
         "count": 3,
@@ -5424,65 +2646,33 @@
           "name": "RARITY",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "name": "rpg_events",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "name": "special_days",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-20T06:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "name": "radio_tower_event",
+          "status": "ok"
+        }
       }
     ],
     "leaderboard.refresh": [
-      {
-        "ts": "2026-02-23T14:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-24T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-25T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-26T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-27T14:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-02-28T05:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-04-01T13:00:00.000Z",
         "count": 1,
