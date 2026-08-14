@@ -1,39 +1,38 @@
 {
   "meta": {
-    "generated_at": "2026-08-14T12:00:04.170Z",
+    "generated_at": "2026-08-14T13:00:04.114Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2026-05-16T12:00:04.170Z",
-      "end": "2026-08-14T12:00:04.170Z"
+      "start": "2026-05-16T13:00:04.114Z",
+      "end": "2026-08-14T13:00:04.114Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 148,
-      "command.latency": 148,
+      "command.invoked": 146,
+      "command.latency": 146,
       "events.subscriptions.by_event": 1392,
       "events.subscriptions.snapshot": 216,
-      "external.fetch": 69290,
-      "leaderboard.refresh": 1,
+      "external.fetch": 243656,
       "notifyme.trigger": 39,
-      "rarity.refresh": 68988,
-      "rpg.fetch": 23,
-      "scheduler.run": 69123,
-      "welcome.dm": 1
+      "scheduler.run": 243494,
+      "rpg.fetch": 21,
+      "welcome.dm": 1,
+      "rarity.refresh": 243359
     },
     "last_7d": {
       "command.invoked": 866,
       "command.latency": 866,
       "events.subscriptions.by_event": 9744,
       "events.subscriptions.snapshot": 1512,
-      "external.fetch": 1679189,
-      "leaderboard.refresh": 7,
-      "rarity.refresh": 1677048,
-      "rpg.fetch": 133,
-      "scheduler.run": 1678033,
-      "notifyme.trigger": 189,
+      "external.fetch": 1856149,
+      "scheduler.run": 1854996,
+      "notifyme.trigger": 192,
+      "rpg.fetch": 129,
       "welcome.dm": 13,
+      "rarity.refresh": 1854011,
+      "leaderboard.refresh": 6,
       "promo.refresh": 4,
       "events.announcements.forward": 2
     },
@@ -48,7 +47,7 @@
       },
       {
         "cmd": "!calc",
-        "count": 21
+        "count": 22
       },
       {
         "cmd": "!stats",
@@ -79,15 +78,6 @@
   },
   "timeseries": {
     "command.invoked": [
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "cmd": "!calc",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
       {
         "ts": "2026-05-16T14:00:00.000Z",
         "count": 1,
@@ -29490,27 +29480,18 @@
           "status": "ok",
           "type": "bang"
         }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "cmd": "!calc",
+          "status": "ok",
+          "type": "bang"
+        }
       }
     ],
     "command.latency": [
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "!calc",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt1000",
-          "cmd": "!calc",
-          "type": "bang"
-        }
-      },
       {
         "ts": "2026-05-16T14:00:00.000Z",
         "count": 1,
@@ -68435,86 +68416,18 @@
           "cmd": "!calc",
           "type": "bang"
         }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!calc",
+          "type": "bang"
+        }
       }
     ],
     "events.subscriptions.by_event": [
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "deerling"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "event_id": "halloween"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "event_id": "valentines"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "weekly_promo"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "event_id": "easter"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "team_rocket"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 7,
-        "tags": {
-          "event_id": "august_golden_day"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "cherubi"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "scatterbug"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "event_id": "discord_announcements"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "event_id": "winter_golden_day"
-        }
-      },
       {
         "ts": "2026-05-16T14:00:00.000Z",
         "count": 5,
@@ -234753,6 +234666,83 @@
       },
       {
         "ts": "2026-08-14T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "winter_golden_day"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "deerling"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "halloween"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "valentines"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "weekly_promo"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "easter"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "team_rocket"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "event_id": "august_golden_day"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "cherubi"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "scatterbug"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "event_id": "discord_announcements"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
         "count": 6,
         "tags": {
           "event_id": "winter_golden_day"
@@ -234761,20 +234751,6 @@
     ],
     "events.subscriptions.snapshot": [
       {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 7,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
         "ts": "2026-05-16T14:00:00.000Z",
         "count": 7,
         "tags": {
@@ -264999,33 +264975,23 @@
         "tags": {
           "type": "users_with_all"
         }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "type": "users_with_all"
+        }
       }
     ],
     "external.fetch": [
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 37002,
-        "tags": {
-          "source": "rarity",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 12,
-        "tags": {
-          "source": "threadwatch",
-          "status": "error"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-05-16T14:00:00.000Z",
         "count": 12,
@@ -288140,2938 +288106,30 @@
       },
       {
         "ts": "2026-08-14T12:00:00.000Z",
-        "count": 211,
+        "count": 208329,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 12,
+        "tags": {
+          "source": "threadwatch",
+          "status": "error"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 218,
         "tags": {
           "source": "rarity",
           "status": "ok"
         }
       }
     ],
-    "leaderboard.refresh": [
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-17T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-18T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-19T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-20T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-21T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-22T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-23T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-24T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-25T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-26T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-27T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-28T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-29T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-30T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-31T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-01T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-02T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-03T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-05T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-06T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-07T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-08T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-09T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-10T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-11T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-12T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-13T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-14T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-15T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-16T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-17T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-18T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-19T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-20T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-21T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-22T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-23T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-24T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-25T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-26T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-27T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-28T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-29T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-30T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-01T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-02T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-03T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-05T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-06T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-07T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-08T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-09T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-10T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-11T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-12T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-13T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-14T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-15T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-16T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-17T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-18T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-19T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-20T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-21T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-22T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-23T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-24T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-25T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-26T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-27T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-28T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-29T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-30T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-31T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-01T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-02T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-03T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-05T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-06T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-07T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-08T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-09T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-10T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-11T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-12T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-13T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      }
-    ],
-    "rarity.refresh": [
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 37003,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-17T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-17T12:00:00.000Z",
-        "count": 179149,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-17T13:00:00.000Z",
-        "count": 36034,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-18T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-18T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-18T13:00:00.000Z",
-        "count": 36653,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-19T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-19T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-19T13:00:00.000Z",
-        "count": 36413,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-20T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-20T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-20T13:00:00.000Z",
-        "count": 36113,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-21T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-21T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-21T13:00:00.000Z",
-        "count": 36344,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-22T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-22T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-22T13:00:00.000Z",
-        "count": 36344,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-23T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-23T12:00:00.000Z",
-        "count": 183435,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-23T13:00:00.000Z",
-        "count": 36461,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-24T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-24T12:00:00.000Z",
-        "count": 183282,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-24T13:00:00.000Z",
-        "count": 36632,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-25T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-25T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-25T13:00:00.000Z",
-        "count": 36306,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-26T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-26T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-26T13:00:00.000Z",
-        "count": 36239,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-27T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-27T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-27T13:00:00.000Z",
-        "count": 36287,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-28T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-28T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-28T13:00:00.000Z",
-        "count": 36195,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-29T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-29T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-29T13:00:00.000Z",
-        "count": 36316,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-30T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-30T12:00:00.000Z",
-        "count": 180216,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-30T13:00:00.000Z",
-        "count": 36091,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-31T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-31T12:00:00.000Z",
-        "count": 144594,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-31T13:00:00.000Z",
-        "count": 36063,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-01T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-01T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-01T13:00:00.000Z",
-        "count": 35791,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-02T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-02T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-02T13:00:00.000Z",
-        "count": 35947,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-03T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-03T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-03T13:00:00.000Z",
-        "count": 36051,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-04T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-04T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-04T13:00:00.000Z",
-        "count": 36472,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-05T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-05T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-05T13:00:00.000Z",
-        "count": 36280,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-06T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-06T12:00:00.000Z",
-        "count": 177126,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-06T13:00:00.000Z",
-        "count": 35418,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-07T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-07T12:00:00.000Z",
-        "count": 105118,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-07T13:00:00.000Z",
-        "count": 34733,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-08T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-08T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-08T13:00:00.000Z",
-        "count": 36035,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-09T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-09T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-09T13:00:00.000Z",
-        "count": 29395,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-10T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-10T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-10T13:00:00.000Z",
-        "count": 34811,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-11T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-11T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-11T13:00:00.000Z",
-        "count": 34107,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-12T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-12T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-12T13:00:00.000Z",
-        "count": 34961,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-13T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-13T12:00:00.000Z",
-        "count": 103422,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-13T13:00:00.000Z",
-        "count": 34771,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-14T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-14T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-14T13:00:00.000Z",
-        "count": 34914,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-15T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-15T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-15T13:00:00.000Z",
-        "count": 35244,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-16T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-16T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-16T13:00:00.000Z",
-        "count": 34881,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-17T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-17T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-17T13:00:00.000Z",
-        "count": 35418,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-18T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-18T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-18T13:00:00.000Z",
-        "count": 35471,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-19T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-19T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-19T13:00:00.000Z",
-        "count": 35191,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-20T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-20T12:00:00.000Z",
-        "count": 105842,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-20T13:00:00.000Z",
-        "count": 35308,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-21T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-21T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-21T13:00:00.000Z",
-        "count": 34363,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-22T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-22T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-22T13:00:00.000Z",
-        "count": 33114,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-23T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-23T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-23T13:00:00.000Z",
-        "count": 29934,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-24T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-24T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-24T13:00:00.000Z",
-        "count": 32679,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-25T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-25T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-25T13:00:00.000Z",
-        "count": 31812,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-26T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-26T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-26T13:00:00.000Z",
-        "count": 31126,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-27T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-27T12:00:00.000Z",
-        "count": 132404,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-27T13:00:00.000Z",
-        "count": 33108,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-28T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-28T12:00:00.000Z",
-        "count": 133067,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-28T13:00:00.000Z",
-        "count": 32587,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-29T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-29T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-29T13:00:00.000Z",
-        "count": 33099,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-30T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-30T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-30T13:00:00.000Z",
-        "count": 30834,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-01T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-01T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-01T13:00:00.000Z",
-        "count": 31403,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-02T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-02T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-02T13:00:00.000Z",
-        "count": 32217,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-03T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-03T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-03T13:00:00.000Z",
-        "count": 31679,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-04T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-04T12:00:00.000Z",
-        "count": 160612,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-04T13:00:00.000Z",
-        "count": 32563,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-05T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-05T12:00:00.000Z",
-        "count": 120882,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-05T13:00:00.000Z",
-        "count": 30615,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-06T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-06T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-06T13:00:00.000Z",
-        "count": 29261,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-07T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-07T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-07T13:00:00.000Z",
-        "count": 30010,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-08T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-08T12:00:00.000Z",
-        "count": 86270,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-08T13:00:00.000Z",
-        "count": 28684,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-09T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-09T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-09T13:00:00.000Z",
-        "count": 29979,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-10T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-10T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-10T13:00:00.000Z",
-        "count": 30093,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-11T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-11T12:00:00.000Z",
-        "count": 177022,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-11T13:00:00.000Z",
-        "count": 29132,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-12T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-12T12:00:00.000Z",
-        "count": 147691,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-12T13:00:00.000Z",
-        "count": 29163,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-13T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-13T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-13T13:00:00.000Z",
-        "count": 29674,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-14T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-14T12:00:00.000Z",
-        "count": 117949,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-14T13:00:00.000Z",
-        "count": 29761,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-15T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-15T12:00:00.000Z",
-        "count": 114803,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-15T13:00:00.000Z",
-        "count": 29589,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-16T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-16T12:00:00.000Z",
-        "count": 86192,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-16T13:00:00.000Z",
-        "count": 29636,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-17T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-17T12:00:00.000Z",
-        "count": 116448,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-17T13:00:00.000Z",
-        "count": 30253,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-18T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-18T12:00:00.000Z",
-        "count": 181240,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-18T13:00:00.000Z",
-        "count": 30476,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-19T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-19T12:00:00.000Z",
-        "count": 144544,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-19T13:00:00.000Z",
-        "count": 28863,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-20T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-20T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-20T13:00:00.000Z",
-        "count": 31541,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-21T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-21T12:00:00.000Z",
-        "count": 97311,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-21T13:00:00.000Z",
-        "count": 32313,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-22T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-22T12:00:00.000Z",
-        "count": 94999,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-22T13:00:00.000Z",
-        "count": 31576,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-23T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-23T12:00:00.000Z",
-        "count": 85781,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-23T13:00:00.000Z",
-        "count": 28961,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-24T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-24T12:00:00.000Z",
-        "count": 93308,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-24T13:00:00.000Z",
-        "count": 29915,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-25T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-25T12:00:00.000Z",
-        "count": 156590,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-25T13:00:00.000Z",
-        "count": 31519,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-26T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-26T12:00:00.000Z",
-        "count": 156365,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-26T13:00:00.000Z",
-        "count": 31450,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-27T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-27T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-27T13:00:00.000Z",
-        "count": 29071,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-28T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-28T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-28T13:00:00.000Z",
-        "count": 31164,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-29T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-29T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-29T13:00:00.000Z",
-        "count": 31278,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-30T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-30T12:00:00.000Z",
-        "count": 30979,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-30T13:00:00.000Z",
-        "count": 30846,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-31T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-31T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-31T13:00:00.000Z",
-        "count": 30251,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-01T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-01T12:00:00.000Z",
-        "count": 151217,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-01T13:00:00.000Z",
-        "count": 30345,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-02T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-02T12:00:00.000Z",
-        "count": 148175,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-02T13:00:00.000Z",
-        "count": 29503,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-03T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-03T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-03T13:00:00.000Z",
-        "count": 29406,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-04T06:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "l4",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-04T06:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-04T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-04T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-04T13:00:00.000Z",
-        "count": 31134,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-05T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-05T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-05T13:00:00.000Z",
-        "count": 29404,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-06T11:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-06T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-06T13:00:00.000Z",
-        "count": 30784,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-06T16:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-07T11:00:00.000Z",
-        "count": 30190,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-07T12:00:00.000Z",
-        "count": 187981,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-07T13:00:00.000Z",
-        "count": 31373,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-08T11:00:00.000Z",
-        "count": 61826,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-08T12:00:00.000Z",
-        "count": 185347,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-08T13:00:00.000Z",
-        "count": 31175,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-09T11:00:00.000Z",
-        "count": 63818,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-09T12:00:00.000Z",
-        "count": 193236,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-09T13:00:00.000Z",
-        "count": 32490,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-10T11:00:00.000Z",
-        "count": 33123,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-10T12:00:00.000Z",
-        "count": 202693,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-10T13:00:00.000Z",
-        "count": 33989,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-11T11:00:00.000Z",
-        "count": 34172,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-11T12:00:00.000Z",
-        "count": 204139,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-11T13:00:00.000Z",
-        "count": 34181,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-12T11:00:00.000Z",
-        "count": 29034,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-12T12:00:00.000Z",
-        "count": 167595,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-12T13:00:00.000Z",
-        "count": 28029,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-13T11:00:00.000Z",
-        "count": 34427,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-13T12:00:00.000Z",
-        "count": 207413,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-13T13:00:00.000Z",
-        "count": 33965,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-14T11:00:00.000Z",
-        "count": 34812,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-14T12:00:00.000Z",
-        "count": 211,
-        "tags": {
-          "kind": "main",
-          "status": "ok"
-        }
-      }
-    ],
     "rpg.fetch": [
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-05-16T14:00:00.000Z",
         "count": 1,
@@ -298322,22 +295380,6 @@
       }
     ],
     "scheduler.run": [
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "name": "threadwatch",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 37003,
-        "tags": {
-          "name": "RARITY",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-05-16T14:00:00.000Z",
         "count": 6,
@@ -317900,7 +314942,23 @@
       },
       {
         "ts": "2026-08-14T12:00:00.000Z",
-        "count": 211,
+        "count": 6,
+        "tags": {
+          "name": "threadwatch",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 208329,
+        "tags": {
+          "name": "RARITY",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 218,
         "tags": {
           "name": "RARITY",
           "status": "ok"
@@ -322093,6 +319151,13 @@
         "tags": {
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 3,
+        "tags": {
+          "status": "ok"
+        }
       }
     ],
     "promo.refresh": [
@@ -322470,6 +319535,2906 @@
         "tags": {
           "reason": "scheduled",
           "status": "stale"
+        }
+      }
+    ],
+    "rarity.refresh": [
+      {
+        "ts": "2026-05-17T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-17T12:00:00.000Z",
+        "count": 179149,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-17T13:00:00.000Z",
+        "count": 36034,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-18T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-18T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-18T13:00:00.000Z",
+        "count": 36653,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-19T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-19T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-19T13:00:00.000Z",
+        "count": 36413,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-20T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-20T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-20T13:00:00.000Z",
+        "count": 36113,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-21T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-21T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-21T13:00:00.000Z",
+        "count": 36344,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-22T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-22T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-22T13:00:00.000Z",
+        "count": 36344,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-23T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-23T12:00:00.000Z",
+        "count": 183435,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-23T13:00:00.000Z",
+        "count": 36461,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-24T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-24T12:00:00.000Z",
+        "count": 183282,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-24T13:00:00.000Z",
+        "count": 36632,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-25T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-25T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-25T13:00:00.000Z",
+        "count": 36306,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-26T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-26T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-26T13:00:00.000Z",
+        "count": 36239,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-27T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-27T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-27T13:00:00.000Z",
+        "count": 36287,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-28T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-28T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-28T13:00:00.000Z",
+        "count": 36195,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-29T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-29T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-29T13:00:00.000Z",
+        "count": 36316,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-30T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-30T12:00:00.000Z",
+        "count": 180216,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-30T13:00:00.000Z",
+        "count": 36091,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-31T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-31T12:00:00.000Z",
+        "count": 144594,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-31T13:00:00.000Z",
+        "count": 36063,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-01T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-01T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-01T13:00:00.000Z",
+        "count": 35791,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-02T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-02T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-02T13:00:00.000Z",
+        "count": 35947,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-03T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-03T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-03T13:00:00.000Z",
+        "count": 36051,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-04T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-04T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-04T13:00:00.000Z",
+        "count": 36472,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-05T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-05T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-05T13:00:00.000Z",
+        "count": 36280,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-06T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-06T12:00:00.000Z",
+        "count": 177126,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-06T13:00:00.000Z",
+        "count": 35418,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-07T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-07T12:00:00.000Z",
+        "count": 105118,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-07T13:00:00.000Z",
+        "count": 34733,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-08T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-08T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-08T13:00:00.000Z",
+        "count": 36035,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-09T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-09T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-09T13:00:00.000Z",
+        "count": 29395,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-10T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-10T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-10T13:00:00.000Z",
+        "count": 34811,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-11T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-11T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-11T13:00:00.000Z",
+        "count": 34107,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-12T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-12T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-12T13:00:00.000Z",
+        "count": 34961,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-13T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-13T12:00:00.000Z",
+        "count": 103422,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-13T13:00:00.000Z",
+        "count": 34771,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-14T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-14T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-14T13:00:00.000Z",
+        "count": 34914,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-15T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-15T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-15T13:00:00.000Z",
+        "count": 35244,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-16T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-16T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-16T13:00:00.000Z",
+        "count": 34881,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-17T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-17T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-17T13:00:00.000Z",
+        "count": 35418,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-18T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-18T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-18T13:00:00.000Z",
+        "count": 35471,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-19T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-19T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-19T13:00:00.000Z",
+        "count": 35191,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-20T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-20T12:00:00.000Z",
+        "count": 105842,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-20T13:00:00.000Z",
+        "count": 35308,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-21T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-21T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-21T13:00:00.000Z",
+        "count": 34363,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-22T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-22T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-22T13:00:00.000Z",
+        "count": 33114,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-23T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-23T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-23T13:00:00.000Z",
+        "count": 29934,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-24T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-24T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-24T13:00:00.000Z",
+        "count": 32679,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-25T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-25T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-25T13:00:00.000Z",
+        "count": 31812,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-26T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-26T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-26T13:00:00.000Z",
+        "count": 31126,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-27T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-27T12:00:00.000Z",
+        "count": 132404,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-27T13:00:00.000Z",
+        "count": 33108,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-28T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-28T12:00:00.000Z",
+        "count": 133067,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-28T13:00:00.000Z",
+        "count": 32587,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-29T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-29T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-29T13:00:00.000Z",
+        "count": 33099,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-30T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-30T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-30T13:00:00.000Z",
+        "count": 30834,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-01T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-01T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-01T13:00:00.000Z",
+        "count": 31403,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-02T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-02T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-02T13:00:00.000Z",
+        "count": 32217,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-03T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-03T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-03T13:00:00.000Z",
+        "count": 31679,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-04T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-04T12:00:00.000Z",
+        "count": 160612,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-04T13:00:00.000Z",
+        "count": 32563,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-05T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-05T12:00:00.000Z",
+        "count": 120882,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-05T13:00:00.000Z",
+        "count": 30615,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-06T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-06T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-06T13:00:00.000Z",
+        "count": 29261,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-07T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-07T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-07T13:00:00.000Z",
+        "count": 30010,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-08T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-08T12:00:00.000Z",
+        "count": 86270,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-08T13:00:00.000Z",
+        "count": 28684,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-09T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-09T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-09T13:00:00.000Z",
+        "count": 29979,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-10T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-10T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-10T13:00:00.000Z",
+        "count": 30093,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-11T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-11T12:00:00.000Z",
+        "count": 177022,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-11T13:00:00.000Z",
+        "count": 29132,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-12T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-12T12:00:00.000Z",
+        "count": 147691,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-12T13:00:00.000Z",
+        "count": 29163,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-13T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-13T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-13T13:00:00.000Z",
+        "count": 29674,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-14T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-14T12:00:00.000Z",
+        "count": 117949,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-14T13:00:00.000Z",
+        "count": 29761,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-15T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-15T12:00:00.000Z",
+        "count": 114803,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-15T13:00:00.000Z",
+        "count": 29589,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-16T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-16T12:00:00.000Z",
+        "count": 86192,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-16T13:00:00.000Z",
+        "count": 29636,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-17T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-17T12:00:00.000Z",
+        "count": 116448,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-17T13:00:00.000Z",
+        "count": 30253,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-18T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-18T12:00:00.000Z",
+        "count": 181240,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-18T13:00:00.000Z",
+        "count": 30476,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-19T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-19T12:00:00.000Z",
+        "count": 144544,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-19T13:00:00.000Z",
+        "count": 28863,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-20T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-20T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-20T13:00:00.000Z",
+        "count": 31541,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-21T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-21T12:00:00.000Z",
+        "count": 97311,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-21T13:00:00.000Z",
+        "count": 32313,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-22T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-22T12:00:00.000Z",
+        "count": 94999,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-22T13:00:00.000Z",
+        "count": 31576,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-23T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-23T12:00:00.000Z",
+        "count": 85781,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-23T13:00:00.000Z",
+        "count": 28961,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-24T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-24T12:00:00.000Z",
+        "count": 93308,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-24T13:00:00.000Z",
+        "count": 29915,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-25T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-25T12:00:00.000Z",
+        "count": 156590,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-25T13:00:00.000Z",
+        "count": 31519,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-26T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-26T12:00:00.000Z",
+        "count": 156365,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-26T13:00:00.000Z",
+        "count": 31450,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-27T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-27T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-27T13:00:00.000Z",
+        "count": 29071,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-28T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-28T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-28T13:00:00.000Z",
+        "count": 31164,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-29T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-29T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-29T13:00:00.000Z",
+        "count": 31278,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-30T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-30T12:00:00.000Z",
+        "count": 30979,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-30T13:00:00.000Z",
+        "count": 30846,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-31T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-31T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-31T13:00:00.000Z",
+        "count": 30251,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-01T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-01T12:00:00.000Z",
+        "count": 151217,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-01T13:00:00.000Z",
+        "count": 30345,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-02T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-02T12:00:00.000Z",
+        "count": 148175,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-02T13:00:00.000Z",
+        "count": 29503,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-03T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-03T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-03T13:00:00.000Z",
+        "count": 29406,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-04T06:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "l4",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-04T06:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-04T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-04T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-04T13:00:00.000Z",
+        "count": 31134,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-05T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-05T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-05T13:00:00.000Z",
+        "count": 29404,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-06T11:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-06T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-06T13:00:00.000Z",
+        "count": 30784,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-06T16:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-07T11:00:00.000Z",
+        "count": 30190,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-07T12:00:00.000Z",
+        "count": 187981,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-07T13:00:00.000Z",
+        "count": 31373,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-08T11:00:00.000Z",
+        "count": 61826,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-08T12:00:00.000Z",
+        "count": 185347,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-08T13:00:00.000Z",
+        "count": 31175,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-09T11:00:00.000Z",
+        "count": 63818,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-09T12:00:00.000Z",
+        "count": 193236,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-09T13:00:00.000Z",
+        "count": 32490,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-10T11:00:00.000Z",
+        "count": 33123,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-10T12:00:00.000Z",
+        "count": 202693,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-10T13:00:00.000Z",
+        "count": 33989,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-11T11:00:00.000Z",
+        "count": 34172,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-11T12:00:00.000Z",
+        "count": 204139,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-11T13:00:00.000Z",
+        "count": 34181,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-12T11:00:00.000Z",
+        "count": 29034,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-12T12:00:00.000Z",
+        "count": 167595,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-12T13:00:00.000Z",
+        "count": 28029,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-13T11:00:00.000Z",
+        "count": 34427,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-13T12:00:00.000Z",
+        "count": 207413,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-13T13:00:00.000Z",
+        "count": 33965,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 34812,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 208329,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-14T13:00:00.000Z",
+        "count": 218,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      }
+    ],
+    "leaderboard.refresh": [
+      {
+        "ts": "2026-05-17T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-18T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-19T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-20T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-21T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-22T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-23T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-24T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-25T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-26T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-27T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-28T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-29T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-30T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-31T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-01T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-02T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-03T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-05T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-06T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-07T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-08T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-09T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-10T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-11T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-12T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-13T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-14T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-15T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-16T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-17T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-18T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-19T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-20T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-21T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-22T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-23T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-24T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-25T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-26T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-27T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-28T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-29T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-30T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-01T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-02T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-03T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-05T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-06T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-07T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-08T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-09T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-10T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-11T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-12T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-13T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-14T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-15T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-16T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-17T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-18T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-19T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-20T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-21T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-22T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-23T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-24T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-25T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-26T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-27T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-28T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-29T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-30T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-31T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-01T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-02T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-03T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-05T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-06T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-07T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-08T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-09T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-10T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-11T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-12T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-13T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
         }
       }
     ],
