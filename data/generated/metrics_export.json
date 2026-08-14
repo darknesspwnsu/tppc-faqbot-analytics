@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-08-14T11:00:04.062Z",
+    "generated_at": "2026-08-14T12:00:04.170Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2026-05-16T11:00:04.062Z",
-      "end": "2026-08-14T11:00:04.062Z"
+      "start": "2026-05-16T12:00:04.170Z",
+      "end": "2026-08-14T12:00:04.170Z"
     }
   },
   "overview": {
@@ -14,25 +14,25 @@
       "command.latency": 148,
       "events.subscriptions.by_event": 1392,
       "events.subscriptions.snapshot": 216,
-      "external.fetch": 241681,
-      "notifyme.trigger": 39,
-      "rarity.refresh": 241378,
-      "scheduler.run": 241517,
+      "external.fetch": 69290,
       "leaderboard.refresh": 1,
+      "notifyme.trigger": 39,
+      "rarity.refresh": 68988,
       "rpg.fetch": 23,
+      "scheduler.run": 69123,
       "welcome.dm": 1
     },
     "last_7d": {
-      "command.invoked": 861,
-      "command.latency": 861,
+      "command.invoked": 866,
+      "command.latency": 866,
       "events.subscriptions.by_event": 9744,
       "events.subscriptions.snapshot": 1512,
-      "external.fetch": 1832148,
-      "notifyme.trigger": 190,
-      "rarity.refresh": 1830006,
-      "scheduler.run": 1830995,
+      "external.fetch": 1679189,
       "leaderboard.refresh": 7,
+      "rarity.refresh": 1677048,
       "rpg.fetch": 133,
+      "scheduler.run": 1678033,
+      "notifyme.trigger": 189,
       "welcome.dm": 13,
       "promo.refresh": 4,
       "events.announcements.forward": 2
@@ -40,15 +40,15 @@
     "top_commands_24h": [
       {
         "cmd": "!ft",
-        "count": 52
+        "count": 50
       },
       {
         "cmd": "!r",
-        "count": 30
+        "count": 31
       },
       {
         "cmd": "!calc",
-        "count": 19
+        "count": 21
       },
       {
         "cmd": "!stats",
@@ -79,33 +79,6 @@
   },
   "timeseries": {
     "command.invoked": [
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "cmd": "!ft",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "cmd": "!r",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "cmd": "viewbox",
-          "status": "ok",
-          "type": "slash"
-        }
-      },
       {
         "ts": "2026-05-16T13:00:00.000Z",
         "count": 2,
@@ -29499,36 +29472,27 @@
           "status": "ok",
           "type": "slash"
         }
+      },
+      {
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "cmd": "!r",
+          "status": "ok",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "cmd": "!calc",
+          "status": "ok",
+          "type": "bang"
+        }
       }
     ],
     "command.latency": [
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt1000",
-          "cmd": "!ft",
-          "type": "bang"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt3000",
-          "cmd": "viewbox",
-          "type": "slash"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt1000",
-          "cmd": "!r",
-          "type": "bang"
-        }
-      },
       {
         "ts": "2026-05-16T13:00:00.000Z",
         "count": 1,
@@ -68435,86 +68399,45 @@
           "cmd": "viewbox",
           "type": "slash"
         }
+      },
+      {
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!r",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!r",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt500",
+          "cmd": "!calc",
+          "type": "bang"
+        }
+      },
+      {
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!calc",
+          "type": "bang"
+        }
       }
     ],
     "events.subscriptions.by_event": [
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "deerling"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "event_id": "halloween"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "event_id": "valentines"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "weekly_promo"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "event_id": "easter"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "team_rocket"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 7,
-        "tags": {
-          "event_id": "august_golden_day"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "cherubi"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "scatterbug"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "event_id": "discord_announcements"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "event_id": "winter_golden_day"
-        }
-      },
       {
         "ts": "2026-05-16T13:00:00.000Z",
         "count": 5,
@@ -234753,6 +234676,83 @@
       },
       {
         "ts": "2026-08-14T11:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "winter_golden_day"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "deerling"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "halloween"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "valentines"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "weekly_promo"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "easter"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "team_rocket"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "event_id": "august_golden_day"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "cherubi"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "scatterbug"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "event_id": "discord_announcements"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
         "count": 6,
         "tags": {
           "event_id": "winter_golden_day"
@@ -234761,20 +234761,6 @@
     ],
     "events.subscriptions.snapshot": [
       {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 7,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
         "ts": "2026-05-16T13:00:00.000Z",
         "count": 7,
         "tags": {
@@ -264999,33 +264985,23 @@
         "tags": {
           "type": "users_with_all"
         }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "type": "users_with_all"
+        }
       }
     ],
     "external.fetch": [
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 221353,
-        "tags": {
-          "source": "rarity",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 12,
-        "tags": {
-          "source": "threadwatch",
-          "status": "error"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-05-16T13:00:00.000Z",
         "count": 37002,
@@ -288145,17 +288121,755 @@
           "source": "rpg",
           "status": "ok"
         }
-      }
-    ],
-    "rarity.refresh": [
+      },
       {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 221352,
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 34812,
         "tags": {
-          "kind": "main",
+          "source": "rarity",
           "status": "ok"
         }
       },
+      {
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 12,
+        "tags": {
+          "source": "threadwatch",
+          "status": "error"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 211,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
+      }
+    ],
+    "leaderboard.refresh": [
+      {
+        "ts": "2026-05-16T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-17T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-18T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-19T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-20T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-21T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-22T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-23T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-24T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-25T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-26T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-27T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-28T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-29T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-30T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-05-31T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-01T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-02T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-03T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-05T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-06T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-07T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-08T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-09T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-10T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-11T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-12T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-13T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-14T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-15T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-16T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-17T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-18T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-19T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-20T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-21T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-22T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-23T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-24T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-25T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-26T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-27T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-28T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-29T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-06-30T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-01T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-02T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-03T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-05T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-06T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-07T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-08T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-09T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-10T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-11T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-12T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-13T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-14T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-15T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-16T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-17T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-18T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-19T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-20T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-21T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-22T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-23T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-24T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-25T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-26T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-27T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-28T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-29T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-30T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-07-31T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-01T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-02T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-03T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-04T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-05T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-06T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-07T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-08T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-09T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-10T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-11T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-12T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-13T13:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "kind": "training",
+          "status": "ok"
+        }
+      }
+    ],
+    "rarity.refresh": [
       {
         "ts": "2026-05-16T13:00:00.000Z",
         "count": 37003,
@@ -290323,25 +291037,25 @@
           "kind": "main",
           "status": "ok"
         }
+      },
+      {
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 34812,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 211,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
       }
     ],
     "rpg.fetch": [
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "POST",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "method": "GET",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-05-16T13:00:00.000Z",
         "count": 1,
@@ -297608,22 +298322,6 @@
       }
     ],
     "scheduler.run": [
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "name": "threadwatch",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-16T12:00:00.000Z",
-        "count": 221352,
-        "tags": {
-          "name": "RARITY",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-05-16T13:00:00.000Z",
         "count": 6,
@@ -317183,726 +317881,28 @@
           "name": "threadwatch",
           "status": "ok"
         }
-      }
-    ],
-    "leaderboard.refresh": [
-      {
-        "ts": "2026-05-16T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-17T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-18T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-19T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-20T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-21T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-22T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-23T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-24T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-25T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-26T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-27T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-28T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-29T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-30T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-05-31T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-01T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-02T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-03T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-05T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-06T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-07T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-08T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-09T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-10T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-11T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-12T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-13T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-14T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-15T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-16T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-17T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-18T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-19T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-20T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-21T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-22T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-23T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-24T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-25T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-26T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-27T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-28T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-29T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-06-30T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-01T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-02T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-03T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-05T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-06T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-07T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-08T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-09T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-10T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-11T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-12T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-13T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-14T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-15T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-16T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-17T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-18T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-19T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-20T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-21T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-22T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-23T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-24T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-25T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-26T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-27T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-28T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-29T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-30T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-07-31T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-01T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-02T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-03T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-04T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-05T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-06T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-07T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-08T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-09T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-10T13:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "kind": "training",
-          "status": "ok"
-        }
       },
       {
-        "ts": "2026-08-11T13:00:00.000Z",
-        "count": 1,
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 6,
         "tags": {
-          "kind": "training",
+          "name": "threadwatch",
           "status": "ok"
         }
       },
       {
-        "ts": "2026-08-12T13:00:00.000Z",
-        "count": 1,
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 34808,
         "tags": {
-          "kind": "training",
+          "name": "RARITY",
           "status": "ok"
         }
       },
       {
-        "ts": "2026-08-13T13:00:00.000Z",
-        "count": 1,
+        "ts": "2026-08-14T12:00:00.000Z",
+        "count": 211,
         "tags": {
-          "kind": "training",
+          "name": "RARITY",
           "status": "ok"
         }
       }
@@ -322085,6 +322085,13 @@
         "count": 5,
         "tags": {
           "status": "error"
+        }
+      },
+      {
+        "ts": "2026-08-14T11:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "status": "ok"
         }
       }
     ],
