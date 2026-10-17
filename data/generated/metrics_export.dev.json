@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-10-17T12:00:01.598Z",
+    "generated_at": "2026-10-17T13:00:01.360Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2026-07-19T12:00:01.598Z",
-      "end": "2026-10-17T12:00:01.598Z"
+      "start": "2026-07-19T13:00:01.360Z",
+      "end": "2026-10-17T13:00:01.360Z"
     }
   },
   "overview": {
@@ -13,9 +13,9 @@
       "command.invoked": 55,
       "command.latency": 55,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 47,
+      "external.fetch": 53,
       "promo.refresh": 7,
-      "rarity.refresh": 19,
+      "rarity.refresh": 25,
       "rpg.fetch": 28,
       "scheduler.run": 21
     },
@@ -23,9 +23,9 @@
       "command.invoked": 55,
       "command.latency": 55,
       "events.subscriptions.snapshot": 0,
-      "external.fetch": 47,
+      "external.fetch": 53,
       "promo.refresh": 7,
-      "rarity.refresh": 19,
+      "rarity.refresh": 25,
       "rpg.fetch": 28,
       "scheduler.run": 21
     },
@@ -544,6 +544,20 @@
         "tags": {
           "type": "users_with_all"
         }
+      },
+      {
+        "ts": "2026-10-17T13:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-10-17T13:00:00.000Z",
+        "count": 0,
+        "tags": {
+          "type": "users_with_all"
+        }
       }
     ],
     "external.fetch": [
@@ -638,6 +652,14 @@
       {
         "ts": "2026-10-17T11:00:00.000Z",
         "count": 5,
+        "tags": {
+          "source": "rarity",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-10-17T12:00:00.000Z",
+        "count": 6,
         "tags": {
           "source": "rarity",
           "status": "ok"
@@ -738,6 +760,14 @@
       {
         "ts": "2026-10-17T11:00:00.000Z",
         "count": 5,
+        "tags": {
+          "kind": "main",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-10-17T12:00:00.000Z",
+        "count": 6,
         "tags": {
           "kind": "main",
           "status": "ok"
