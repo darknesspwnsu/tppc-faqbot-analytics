@@ -1,22 +1,22 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T02:00:03.600Z",
+    "generated_at": "2026-11-14T03:00:03.666Z",
     "bucket": "hour",
     "window_days": 90,
     "range": {
-      "start": "2026-08-16T02:00:03.600Z",
-      "end": "2026-11-14T02:00:03.600Z"
+      "start": "2026-08-16T03:00:03.666Z",
+      "end": "2026-11-14T03:00:03.666Z"
     }
   },
   "overview": {
     "last_24h": {
-      "command.invoked": 22,
-      "command.latency": 22,
       "events.subscriptions.by_event": 1392,
       "events.subscriptions.snapshot": 216,
       "external.fetch": 34531,
-      "scheduler.run": 34371,
       "rpg.fetch": 12,
+      "scheduler.run": 34371,
+      "command.invoked": 20,
+      "command.latency": 20,
       "rarity.refresh": 34243,
       "leaderboard.refresh": 1,
       "notifyme.trigger": 8
@@ -27,8 +27,8 @@
       "events.subscriptions.by_event": 9744,
       "events.subscriptions.snapshot": 1512,
       "external.fetch": 241582,
-      "scheduler.run": 240250,
       "rpg.fetch": 262,
+      "scheduler.run": 240250,
       "notifyme.trigger": 71,
       "rarity.refresh": 239318,
       "leaderboard.refresh": 7,
@@ -38,7 +38,7 @@
     "top_commands_24h": [
       {
         "cmd": "!calc",
-        "count": 9
+        "count": 7
       },
       {
         "cmd": "!ft",
@@ -78,15 +78,6 @@
   },
   "timeseries": {
     "command.invoked": [
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "cmd": "!ft",
-          "status": "ok",
-          "type": "bang"
-        }
-      },
       {
         "ts": "2026-08-16T04:00:00.000Z",
         "count": 3,
@@ -16034,18 +16025,18 @@
           "status": "ok",
           "type": "bang"
         }
+      },
+      {
+        "ts": "2026-11-14T02:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "cmd": "!calc",
+          "status": "ok",
+          "type": "bang"
+        }
       }
     ],
     "command.latency": [
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "bucket": "lt500",
-          "cmd": "!ft",
-          "type": "bang"
-        }
-      },
       {
         "ts": "2026-08-16T04:00:00.000Z",
         "count": 1,
@@ -36610,87 +36601,19 @@
           "cmd": "!r",
           "type": "bang"
         }
+      },
+      {
+        "ts": "2026-11-14T02:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "bucket": "lt1000",
+          "cmd": "!calc",
+          "type": "bang"
+        }
       }
     ],
     "events.subscriptions.by_event": [
       {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "deerling"
-        }
-      },
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "event_id": "halloween"
-        }
-      },
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "event_id": "valentines"
-        }
-      },
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "weekly_promo"
-        }
-      },
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "event_id": "easter"
-        }
-      },
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "team_rocket"
-        }
-      },
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 7,
-        "tags": {
-          "event_id": "august_golden_day"
-        }
-      },
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "cherubi"
-        }
-      },
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "event_id": "scatterbug"
-        }
-      },
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "event_id": "discord_announcements"
-        }
-      },
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "event_id": "winter_golden_day"
-        }
-      },
-      {
         "ts": "2026-08-16T04:00:00.000Z",
         "count": 5,
         "tags": {
@@ -202928,6 +202851,83 @@
       },
       {
         "ts": "2026-11-14T02:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "winter_golden_day"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "deerling"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "halloween"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "valentines"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "weekly_promo"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
+        "count": 6,
+        "tags": {
+          "event_id": "easter"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "team_rocket"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "event_id": "august_golden_day"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "cherubi"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
+        "count": 5,
+        "tags": {
+          "event_id": "scatterbug"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "event_id": "discord_announcements"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
         "count": 6,
         "tags": {
           "event_id": "winter_golden_day"
@@ -202936,20 +202936,6 @@
     ],
     "events.subscriptions.snapshot": [
       {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 7,
-        "tags": {
-          "type": "users_with_any"
-        }
-      },
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 2,
-        "tags": {
-          "type": "users_with_all"
-        }
-      },
-      {
         "ts": "2026-08-16T04:00:00.000Z",
         "count": 7,
         "tags": {
@@ -233170,6 +233156,20 @@
       },
       {
         "ts": "2026-11-14T02:00:00.000Z",
+        "count": 2,
+        "tags": {
+          "type": "users_with_all"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
+        "count": 7,
+        "tags": {
+          "type": "users_with_any"
+        }
+      },
+      {
+        "ts": "2026-11-14T03:00:00.000Z",
         "count": 2,
         "tags": {
           "type": "users_with_all"
@@ -233177,22 +233177,6 @@
       }
     ],
     "external.fetch": [
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 12,
-        "tags": {
-          "source": "threadwatch",
-          "status": "error"
-        }
-      },
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 5,
-        "tags": {
-          "source": "rpg",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-08-16T04:00:00.000Z",
         "count": 12,
@@ -255824,16 +255808,17 @@
           "source": "threadwatch",
           "status": "error"
         }
+      },
+      {
+        "ts": "2026-11-14T02:00:00.000Z",
+        "count": 12,
+        "tags": {
+          "source": "threadwatch",
+          "status": "error"
+        }
       }
     ],
     "notifyme.trigger": [
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "status": "error"
-        }
-      },
       {
         "ts": "2026-08-16T04:00:00.000Z",
         "count": 1,
@@ -258719,23 +258704,577 @@
         }
       }
     ],
-    "rpg.fetch": [
+    "promo.refresh": [
       {
-        "ts": "2026-08-16T03:00:00.000Z",
+        "ts": "2026-08-16T04:00:00.000Z",
         "count": 1,
         "tags": {
-          "method": "POST",
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-08-16T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
           "status": "ok"
         }
       },
       {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 4,
+        "ts": "2026-08-16T04:00:00.000Z",
+        "count": 1,
         "tags": {
-          "method": "GET",
+          "reason": "scheduled",
           "status": "ok"
         }
       },
+      {
+        "ts": "2026-08-16T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-08-23T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-08-23T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-23T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-23T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-08-30T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-08-30T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-30T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-08-30T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-09-06T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-09-06T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-09-06T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-09-06T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-09-13T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-09-13T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-09-20T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-09-20T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-09-20T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-09-20T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-09-27T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-09-27T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-09-27T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-09-27T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-10-04T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-10-04T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-10-04T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-10-04T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-10-11T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-10-11T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-10-11T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-10-11T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-10-18T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "error"
+        }
+      },
+      {
+        "ts": "2026-10-18T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-10-18T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-10-18T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-10-21T16:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "startup",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-10-25T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-10-25T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-10-25T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-10-25T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-01T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-11-01T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-11-01T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-01T17:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "startup",
+          "status": "error"
+        }
+      },
+      {
+        "ts": "2026-11-04T19:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "startup",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-11-08T04:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "scheduled",
+          "status": "ok"
+        }
+      },
+      {
+        "ts": "2026-11-08T05:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T06:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T07:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T08:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T09:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T10:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T11:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T12:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T13:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T14:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T15:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T16:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T17:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T18:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T19:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T20:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T21:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T22:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-08T23:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-09T00:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-09T01:00:00.000Z",
+        "count": 4,
+        "tags": {
+          "reason": "event",
+          "status": "stale"
+        }
+      },
+      {
+        "ts": "2026-11-09T02:00:00.000Z",
+        "count": 1,
+        "tags": {
+          "reason": "event",
+          "status": "error"
+        }
+      }
+    ],
+    "rpg.fetch": [
       {
         "ts": "2026-08-16T04:00:00.000Z",
         "count": 5,
@@ -264898,14 +265437,6 @@
       }
     ],
     "scheduler.run": [
-      {
-        "ts": "2026-08-16T03:00:00.000Z",
-        "count": 6,
-        "tags": {
-          "name": "threadwatch",
-          "status": "ok"
-        }
-      },
       {
         "ts": "2026-08-16T04:00:00.000Z",
         "count": 1,
@@ -284321,575 +284852,13 @@
           "name": "threadwatch",
           "status": "ok"
         }
-      }
-    ],
-    "promo.refresh": [
-      {
-        "ts": "2026-08-16T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
       },
       {
-        "ts": "2026-08-16T04:00:00.000Z",
-        "count": 1,
+        "ts": "2026-11-14T02:00:00.000Z",
+        "count": 6,
         "tags": {
-          "reason": "event",
+          "name": "threadwatch",
           "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-16T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-16T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-08-23T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-08-23T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-23T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-23T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-08-30T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-08-30T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-30T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-08-30T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-09-06T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-09-06T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-09-06T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-09-06T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-09-13T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-09-13T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-09-20T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-09-20T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-09-20T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-09-20T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-09-27T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-09-27T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-09-27T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-09-27T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-10-04T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-10-04T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-10-04T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-10-04T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-10-11T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-10-11T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-10-11T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-10-11T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-10-18T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "error"
-        }
-      },
-      {
-        "ts": "2026-10-18T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-10-18T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-10-18T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-10-21T16:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "startup",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-10-25T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-10-25T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-10-25T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-10-25T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-01T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-11-01T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-11-01T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-01T17:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "startup",
-          "status": "error"
-        }
-      },
-      {
-        "ts": "2026-11-04T19:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "startup",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-11-08T04:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "scheduled",
-          "status": "ok"
-        }
-      },
-      {
-        "ts": "2026-11-08T05:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T06:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T07:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T08:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T09:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T10:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T11:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T12:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T13:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T14:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T15:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T16:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T17:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T18:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T19:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T20:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T21:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T22:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-08T23:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-09T00:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-09T01:00:00.000Z",
-        "count": 4,
-        "tags": {
-          "reason": "event",
-          "status": "stale"
-        }
-      },
-      {
-        "ts": "2026-11-09T02:00:00.000Z",
-        "count": 1,
-        "tags": {
-          "reason": "event",
-          "status": "error"
         }
       }
     ],
